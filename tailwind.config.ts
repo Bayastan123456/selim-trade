@@ -10,7 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        back: "url('/Main/back.png')"
+        back: "url('/Main/back.png')",
+        form: "url('/Form/image 20.png')"
       },
     },
   },

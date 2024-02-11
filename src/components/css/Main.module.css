@@ -1,0 +1,17 @@
+.main .main__text {
+  padding-top: 140px;
+}
+.main .main__text h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 88px;
+  color: #fcfcfc;
+}
+.main .main__text p {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #fcfcfc;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=Main.module.css.map */

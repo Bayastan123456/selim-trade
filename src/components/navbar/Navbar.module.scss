@@ -1,0 +1,48 @@
+@import "../../app/globalVariables.scss";
+
+.nav {
+  margin-top: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 5;
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.4);
+    color: $white;
+    border-radius: 10px;
+
+    .nav__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+
+      .nav__ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+
+        li {
+          text-decoration: none;
+          transition: text-decoration 0.5s ease-in-out;
+          cursor: pointer;
+        }
+        li:hover {
+          text-decoration: underline;
+        }
+      }
+      .nav__adress {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+  }
+}

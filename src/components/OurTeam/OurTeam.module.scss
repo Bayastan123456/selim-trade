@@ -1,10 +1,13 @@
-@import '../../app/globalVariables.scss';
+@import "../../app/globalVariables.scss";
 .ourTeam {
+  position: relative;
+  z-index: -1;
   background-image: url("../../assets/OurTeam/image 16.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  margin-top: -50px;
   h1 {
     font-size: 40px;
     line-height: 60px;
@@ -16,7 +19,7 @@
     padding-top: 160px;
   }
   .ourTeam__text_desc {
-    background: #FFFFFF;
+    background: #ffffff;
     width: 533px;
     padding: 10px 15px;
     border-radius: 10px;

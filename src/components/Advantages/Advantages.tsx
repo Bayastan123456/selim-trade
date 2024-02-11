@@ -1,3 +1,4 @@
+
 import React from "react";
 import style from "./Advantages.module.scss";
 import Image from "next/image";
