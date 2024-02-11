@@ -6,12 +6,13 @@ import Reviews from "@/components/Reviews/Reviews";
 import Navbar from "@/components/navbar/Navbar";
 import Form from "@/components/Form/Form";
 import LastNews from "@/components/LastNews/LastNews";
+import Main from "@/components/Main/Main";
 export default function Home() {
   return (
     <>
       <div className="main_back">
         <Navbar />
-        {/* <Main /> */}
+        <Main />
       </div>
       <OurTeam />
       <Advantages />
