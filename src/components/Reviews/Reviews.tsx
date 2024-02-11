@@ -71,7 +71,7 @@ const Reviews = () => {
       setCurrentPage(pageNumber);
     }
   };
-  console.log(currentPage);
+  // console.log(currentPage);
 
   const dataReviewsMap = React.useMemo(
     () =>
