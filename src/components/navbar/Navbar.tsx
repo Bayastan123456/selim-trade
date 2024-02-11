@@ -25,7 +25,6 @@ const Navbar: FC = () => {
               </li>
             ))}
           </ul>
-
           <div className={scss.nav__adress}>
             <p>г. Бишкек</p>
             <p>+996 (552) 57 07 55</p>
