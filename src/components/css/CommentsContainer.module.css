@@ -1,0 +1,13 @@
+.commentsContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.commentsContainer h2 {
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}/*# sourceMappingURL=CommentsContainer.module.css.map */
