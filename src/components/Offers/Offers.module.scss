@@ -9,7 +9,7 @@
   .see_all {
     font-family: "Inter" sans-serif;
     border-radius: 18px;
-    border: 1px solid #5061ff;
+    border: 1px solid $color1;
     position: absolute;
     left: 45%;
     font-size: 18px;
@@ -24,7 +24,8 @@
     color: #222;
     transition: background-color 0.3s ease;
     &:hover {
-      background-color: #5061ff;
+      background-color: $color1;
+      color: $white;
     }
   }
 
