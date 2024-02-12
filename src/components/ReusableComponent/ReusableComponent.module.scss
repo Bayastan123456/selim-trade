@@ -1,13 +1,15 @@
-@import "../../app/globalVariables.scss";
-.component {
-  .component__container {
-    margin: 0 auto;
-  }
-  h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 60px;
-    color: $black;
-    text-align: center;
-  }
+@import '../../app/globalVariables.scss';
+.component{
+    .component__container{
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        color: $black;
+        text-align: center;
+    }
 }
