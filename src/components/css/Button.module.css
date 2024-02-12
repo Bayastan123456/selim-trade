@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  align-items: center;
+  padding: 13px 41px;
+  gap: 25px;
+  background: linear-gradient(to right, #105BFB 0%, #105BFB 100%, #5061FF 100%, #5061FF 100%);
+  color: #fcfcfc;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+}/*# sourceMappingURL=Button.module.css.map */

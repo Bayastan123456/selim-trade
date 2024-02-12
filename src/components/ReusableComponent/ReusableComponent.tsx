@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import scss from "./ReusableComponent.module.scss";
+
 interface Type {
   children: ReactNode;
   title: string;
