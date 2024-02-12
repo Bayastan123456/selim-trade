@@ -17,9 +17,9 @@ export default function Home() {
         <Main />
       </div>
       <OurTeam />
+      <Offers />
       <LastNews />
       <Advantages />
-      <Offers />
       <OurWorks />
       <Service />
       <div className="form_back">
