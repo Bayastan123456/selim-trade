@@ -7,28 +7,15 @@ import Main from "@/components/Main/Main";
 import Navbar from "@/components/navbar/Navbar";
 import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
-import Service from "@/components/Service/Service";
-import Reviews from "@/components/Reviews/Reviews";
-
+import Form from "@/components/Form/Form";
 export default function Home() {
   return (
     <>
-      <div className="main_back">
-        <Navbar />
-        <Main />
-      </div>
-      <OurTeam />
-      <Offers />
+    <OurTeam/>
       <Advantages />
-      <LastNews />
       <OurWorks />
-      <Service />
-      <Reviews />
-
-      <div className="form_back">
-        <Form />
-        <Footer />
-      </div>
+      <Form/>
+      <Footer/>
     </>
   );
 }
