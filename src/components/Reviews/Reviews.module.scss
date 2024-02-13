@@ -1,0 +1,70 @@
+@import "../../app/globalVariables.scss";
+
+.reviews__container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .reviews__blok {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+
+    .reviews__card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+      align-items: center;
+      width: 22%;
+      height: 180px;
+      padding: 0 10px;
+      padding-bottom: 20px;
+
+      .reviews__icon {
+        display: flex;
+        align-items: center;
+
+        .reviews__image {
+          border-radius: 50%;
+          box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+          margin: -10px 20px 10px 0px;
+        }
+        .reviews__title {
+          font-size: 14px;
+        }
+        .reviews__title > p:nth-child(1) {
+          font-weight: bold;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+  .reviews__vectors {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .reviewsVec1 {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .reviewsVec2 {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .reviewsVec1:hover {
+      transform: scale(1.1);
+    }
+    .reviewsVec2:hover {
+      transform: scale(1.1);
+    }
+  }
+}

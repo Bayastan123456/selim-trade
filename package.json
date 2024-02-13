@@ -9,18 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/jest": "^29.5.12",
+    "antd": "^5.14.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.70.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.51",
+    "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5"
-  }
+    "typescript": "^5.3.3"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/luchok22/selim-trade.git",
+  "author": "Asan Turdukulov <asanturdukulov86@gmail.com>",
+  "license": "MIT"
 }

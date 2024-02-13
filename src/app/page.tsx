@@ -1,18 +1,34 @@
 import Advantages from "@/components/Advantages/Advantages";
-import OurWorks from "@/components/OurWorks/OurWorks";
+import LastNews from "@/components/LastNews/LastNews";
+import Offers from "@/components/Offers/Offers";
 import OurTeam from "@/components/OurTeam/OurTeam";
-import Footer from "@/components/Footer/Footer";
+import OurWorks from "@/components/OurWorks/OurWorks";
+import Main from "@/components/Main/Main";
+import Navbar from "@/components/navbar/Navbar";
 import Form from "@/components/Form/Form";
-// import OurServices from "@/components/OurServices/OurServices";
- export default function Home() {
+import Footer from "@/components/Footer/Footer";
+import Service from "@/components/Service/Service";
+import Reviews from "@/components/Reviews/Reviews";
+
+export default function Home() {
   return (
     <>
-    {/* <OurServices/> */}
-    <OurTeam/>
+      <div className="main_back">
+        <Navbar />
+        <Main />
+      </div>
+      <OurTeam />
+      <Offers />
       <Advantages />
+      <LastNews />
       <OurWorks />
-      <Form/>
-      <Footer/>
+      <Service />
+      <Reviews />
+
+      <div className="form_back">
+        <Form />
+        <Footer />
+      </div>
     </>
   );
 }

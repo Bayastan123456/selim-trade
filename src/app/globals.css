@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,24 +17,25 @@
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
   max-width: 1280px;
 }
 
-.main_back{
+.main_back {
   @apply bg-back bg-cover bg-center;
   height: 100vh;
+  border-radius: 0px 0px 134px 134px / 0px 0px 40px 40px;
 }
-.form_back{
+.form_back {
   @apply bg-form bg-cover bg-center;
   height: 100vh;
 }
