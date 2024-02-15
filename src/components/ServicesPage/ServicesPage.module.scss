@@ -1,0 +1,77 @@
+@import "../../app/globalVariables.scss";
+.Services__images {
+  .Services__image {
+    border-radius: 15px;
+    width: 670px;
+    height: 350px;
+  }
+  p {
+    color: $white;
+    font-weight: bold;
+    font-weight: 800;
+    // font-size: 27px;
+
+  }
+}
+.services {
+  background-image: url("../../assets/ServicesPage/imagebg.png");
+  background-repeat: no-repeat;
+
+  .cards {
+    background-image: url("../../assets/ServicesPage/image\ 20.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 105px;
+  }
+
+  h1 {
+    font-size: 70px;
+    line-height: 105px;
+    color: $black;
+    font-weight: 700;
+  }
+  .services__text {
+    padding-top: 192px;
+
+    justify-content: center;
+    display: flex;
+    column-gap: 190px;
+    align-items: center;
+  }
+  .services__text_desc {
+    text-align: justify;
+    width: 652px;
+
+    display: flex;
+
+    h4 {
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 26.6px;
+      color: $black;
+    }
+  }
+  .Service_text_inner {
+    position: absolute;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: -56px;
+    margin-left: 10px;
+    border-radius: 20px;
+    width: auto;
+    max-width: 587px;
+    text-align: left;
+  
+  }
+}
