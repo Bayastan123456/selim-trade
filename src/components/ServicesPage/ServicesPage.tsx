@@ -89,8 +89,6 @@ const ServicesPage = () => {
       </div>
       <div className={scss.cards}>
       {dataServicesMap}
-
-      
       </div>
     </div>
   );
