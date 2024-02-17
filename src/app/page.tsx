@@ -23,13 +23,12 @@ export default function Home() {
       <LastNews />
       <OurWorks />
       <Service />
-      <Reviews />
 
       <div className="form_back">
+        <Reviews />
         <Form />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
-

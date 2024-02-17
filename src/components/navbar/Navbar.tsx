@@ -16,7 +16,7 @@ const Navbar: FC = () => {
     <nav className={scss.nav}>
       <div className={scss.navbar}>
         <div className={scss.nav__container}>
-          <Image src={logo} alt="logo" width={100} />
+          <Image src={logo} alt="logo" width={100} height={100} />
 
           <ul className={scss.nav__ul}>
             {menuItems.map((item, index) => (
