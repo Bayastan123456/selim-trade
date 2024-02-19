@@ -15,21 +15,21 @@ export default function Home() {
   return (
     <>
       <div className="main_back">
-        {/* <Navbar />
-        <Main /> */}
+        <Navbar />
+        <Main />
       </div>
-      {/* <OurTeam />
+      <OurTeam />
       <LastNews />
       <Advantages />
       <Offers />
       <OurWorks />
       <Service />
-      <Reviews /> */}
-      <Main_advantages />
+      <Reviews />
+      {/* <Main_advantages /> */}
 
       <div className="form_back">
-        {/* <Form />
-        <Footer /> */}
+        <Form />
+        <Footer />
       </div>
     </>
   );
