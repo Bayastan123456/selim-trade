@@ -9,27 +9,28 @@ import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
 import Service from "@/components/Service/Service";
 import Reviews from "@/components/Reviews/Reviews";
+import Main_advantages from "@/components/Main_advantages/Main_advantages";
 
 export default function Home() {
   return (
     <>
       <div className="main_back">
-        <Navbar />
-        <Main />
+        {/* <Navbar />
+        <Main /> */}
       </div>
-      <OurTeam />
+      {/* <OurTeam />
       <LastNews />
       <Advantages />
       <Offers />
       <OurWorks />
       <Service />
-      <Reviews />
+      <Reviews /> */}
+      <Main_advantages />
 
       <div className="form_back">
-        <Form />
-        <Footer />
+        {/* <Form />
+        <Footer /> */}
       </div>
     </>
   );
 }
-
