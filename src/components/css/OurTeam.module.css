@@ -1,9 +1,12 @@
 .ourTeam {
+  position: relative;
+  z-index: -1;
   background-image: url("../../assets/OurTeam/image 16.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  margin-top: -50px;
 }
 .ourTeam h1 {
   font-size: 40px;
@@ -16,7 +19,7 @@
   padding-top: 160px;
 }
 .ourTeam .ourTeam__text_desc {
-  background: #FFFFFF;
+  background: #ffffff;
   width: 533px;
   padding: 10px 15px;
   border-radius: 10px;
