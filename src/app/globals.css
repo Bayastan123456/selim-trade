@@ -36,10 +36,9 @@
   border-radius: 0px 0px 134px 134px / 0px 0px 40px 40px;
 }
 .form_back {
-  /* @apply bg-form bg-cover bg-center; */
+  @apply bg-form bg-cover bg-center;
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
 }
 
 @layer utilities {
