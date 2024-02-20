@@ -11,12 +11,11 @@ const Navbar: FC = () => {
     { title: "новости", url: "/news" },
     { title: "наши работы", url: "/WeWork" },
   ];
-
   return (
     <nav className={scss.nav}>
       <div className={scss.navbar}>
         <div className={scss.nav__container}>
-          <Image src={logo} alt="logo" width={100} />
+          <Image src={logo} alt="logo" />
 
           <ul className={scss.nav__ul}>
             {menuItems.map((item, index) => (

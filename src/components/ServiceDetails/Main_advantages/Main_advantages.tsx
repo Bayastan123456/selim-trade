@@ -1,5 +1,5 @@
 import React from "react";
-import ReusableComponent from "../ReusableComponent/ReusableComponent";
+import ReusableComponent from "../../ReusableComponent/ReusableComponent";
 import style from "./Main_advantages.module.scss";
 
 const Main_advantages: React.FC = () => {
