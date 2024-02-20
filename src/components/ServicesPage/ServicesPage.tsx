@@ -9,7 +9,7 @@ interface Data {
   title: string;
   image: StaticImageData;
 }
-const ServicesPage = () => {
+const ServicesPage: React.FC = () => {
   const dataServicesMap = useMemo(
     () =>
       servicesData?.map(({ id, title, image }: Data) => (
