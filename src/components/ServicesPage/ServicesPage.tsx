@@ -3,23 +3,20 @@ import React from "react";
 import { useMemo } from "react";
 import scss from "./ServicesPage.module.scss";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { servicesData } from "@/api/services";
+import Link from "next/link";
+
 const ServicesPage = () => {
-  const router = useRouter();
   const dataServicesMap = useMemo(
     () =>
-      servicesData.map((item, index) => (
-        <div key={index} className={scss.Services__images}>
-          <Image
-            src={item.image}
-            alt="error"
-            className={scss.Services__image}
-            onClick={() => router.push(`services/${index}`)}
-          />
+      servicesData?.map(({ id, title, image }: any) => (
+        <div key={id} className={scss.Services__images}>
+          <Link href={`services/${id}`}>
+            <Image src={image} alt="error" className={scss.Services__image} />
+          </Link>
 
           <div className={scss.Service_text_inner}>
-            <p>{item.text}</p>
+            <p>{title}</p>
           </div>
         </div>
       )),

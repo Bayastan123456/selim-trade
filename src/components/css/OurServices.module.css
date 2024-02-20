@@ -1,0 +1,36 @@
+.services_bg {
+  background-image: url("../../assets/OurServices/bgimage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.services_bg h1 {
+  display: flex;
+  font-size: 70px;
+  line-height: 105px;
+  color: #414141;
+  font-weight: 700;
+}
+.services_bg h1 .services_right {
+  width: 652px;
+}
+.services_bg .services__up {
+  display: flex;
+  padding-top: 160px;
+}
+.services_bg .ourTeam__text_desc {
+  background: #FFFFFF;
+  width: 533px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.services_bg .ourTeam__text_desc p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #414141;
+}/*# sourceMappingURL=OurServices.module.css.map */

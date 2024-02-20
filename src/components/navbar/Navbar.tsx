@@ -3,6 +3,7 @@ import scss from "./Navbar.module.scss";
 import logo from "../../assets/navbar/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar: FC = () => {
   const menuItems = [
@@ -11,7 +12,6 @@ const Navbar: FC = () => {
     { title: "новости", url: "/news" },
     { title: "наши работы", url: "/WeWork" },
   ];
-
   return (
     <nav className={scss.nav}>
       <div className={scss.navbar}>

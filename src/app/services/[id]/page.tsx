@@ -1,55 +1,31 @@
-"use client";
 import { servicesData } from "@/api/services";
+import Main_advantages from "@/components/ServiceDetails/Main_advantages/Main_advantages";
 import SectionDoor from "@/components/ServiceDetails/SectionDoor/SectionDoor";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-export async function getStaticPaths() {
-  const paths = servicesData.map((service) => ({
-    params: { id: service.id.toString() },
-  }));
+export default function ServiceDetailsPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  // console.log(params);
 
-  return { paths, fallback: true };
-}
-
-function ServiceDetailsPage() {
-  const router = useRouter();
-  const { id } = router.query;
-  const [cardDetails, setCardDetails] = useState(servicesData);
-
-  useEffect(() => {
-    // Получите данные карточки по id из вашего источника данных (API, база данных и т. д.)
-    // Например, здесь вы можете использовать id для запроса к API и получения информации о карточке
-    const fetchCardDetails = async () => {
-      try {
-        const response = await fetch(`/services/${id}`);
-        const data = await response.json();
-        setCardDetails(data); // Устанавливаем детали карточки в состояние
-      } catch (error) {
-        console.error("Failed to fetch card details:", error);
+  function findObjectById(id: number) {
+    for (var i = 0; i < servicesData.length; i++) {
+      if (servicesData[i].id === id) {
+        return servicesData[i];
       }
-    };
-
-    if (id) {
-      fetchCardDetails();
     }
-  }, [id]);
-
-  if (!cardDetails) {
-    return <div>Loading...</div>;
+    return null;
   }
+
+  const res = findObjectById(Number(params.id));
+  // console.log(res);
+
   return (
     <div>
-      {servicesData.map((item) => (
-        <SectionDoor
-          id={item.id}
-          image={item.image}
-          text={item.text}
-          key={item.id}
-        />
-      ))}
+      {res && <SectionDoor id={res.id} image={res.image} text={res.title} />}
+      <Main_advantages />
     </div>
   );
 }
-
-export default ServiceDetailsPage;

@@ -18,11 +18,12 @@ export default function Home() {
         <Main />
       </div>
       <OurTeam />
-      <Offers />
-      <Advantages />
       <LastNews />
+      <Advantages />
+      <Offers />
       <OurWorks />
       <Service />
+      <Reviews />
 
       <div className="form_back">
         <Reviews />

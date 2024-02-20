@@ -8,7 +8,7 @@ import img2 from "/src/assets/Offers/image_2.jpg";
 import img4 from "/src/assets/Offers/image_4.jpg";
 import img5 from "/src/assets/Offers/image_5.jpg";
 
-const Offers = () => {
+const Offers: React.FC = () => {
   return (
     <div className={scss.offers_bg}>
       <ReusableComponent title="Мы предлагаем">

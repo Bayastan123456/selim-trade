@@ -3,12 +3,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  margin-bottom: 90px;
+  width: 100%;
+  height: 100%;
 }
 .offers_bg .see_all {
   font-family: "Inter" sans-serif;
   border-radius: 18px;
-  border: 1px solid #5061ff;
+  border: 1px solid #105BFB;
   position: absolute;
   left: 45%;
   font-size: 18px;
@@ -24,7 +26,8 @@
   transition: background-color 0.3s ease;
 }
 .offers_bg .see_all:hover {
-  background-color: #5061ff;
+  background-color: #105BFB;
+  color: #fcfcfc;
 }
 .offers_bg .images {
   display: flex;

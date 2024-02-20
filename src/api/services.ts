@@ -13,66 +13,66 @@ import { StaticImageData } from "next/image";
 interface ServicesData {
   id: number;
   image: StaticImageData;
-  text: string;
+  title: string;
 }
 
 export const servicesData: ServicesData[] = [
   {
     id: 1,
     image: img1,
-    text: "Промышленные секционные ворота",
+    title: "Промышленные секционные ворота",
   },
   {
     id: 2,
     image: img2,
-    text: "Ролл ворота",
+    title: "Ролл ворота",
   },
   {
     id: 3,
 
     image: img3,
-    text: "Секционные ворота",
+    title: "Секционные ворота",
   },
   {
     id: 4,
 
     image: img4,
-    text: "Роль ставни",
+    title: "Роль ставни",
   },
   {
     id: 5,
 
     image: img5,
-    text: "Откатные ворота",
+    title: "Откатные ворота",
   },
   {
     id: 6,
 
     image: img6,
-    text: "Распашные ворота",
+    title: "Распашные ворота",
   },
   {
     id: 7,
 
     image: img7,
-    text: "Автоматика и механизмы для откатных и распашных ворот",
+    title: "Автоматика и механизмы для откатных и распашных ворот",
   },
   {
     id: 8,
 
     image: img8,
-    text: "Автоматические шлагбаумы",
+    title: "Автоматические шлагбаумы",
   },
   {
     id: 9,
 
     image: img9,
-    text: "Складные ворота",
+    title: "Складные ворота",
   },
   {
     id: 10,
 
     image: img10,
-    text: "Отдельно стоящие калитки",
+    title: "Отдельно стоящие калитки",
   },
 ];
