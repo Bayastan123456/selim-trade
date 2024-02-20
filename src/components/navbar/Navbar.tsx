@@ -3,7 +3,6 @@ import scss from "./Navbar.module.scss";
 import logo from "../../assets/navbar/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
 
 const Navbar: FC = () => {
   const menuItems = [
@@ -16,7 +15,7 @@ const Navbar: FC = () => {
     <nav className={scss.nav}>
       <div className={scss.navbar}>
         <div className={scss.nav__container}>
-          <Image src={logo} alt="logo" width={100} height={100} />
+          <Image src={logo} alt="logo" />
 
           <ul className={scss.nav__ul}>
             {menuItems.map((item, index) => (

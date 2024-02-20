@@ -1,15 +1,18 @@
-"use client";
-import React from "react";
 import { useMemo } from "react";
 import scss from "./ServicesPage.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { servicesData } from "@/api/services";
 import Link from "next/link";
 
+interface Data {
+  id: number;
+  title: string;
+  image: StaticImageData;
+}
 const ServicesPage = () => {
   const dataServicesMap = useMemo(
     () =>
-      servicesData?.map(({ id, title, image }: any) => (
+      servicesData?.map(({ id, title, image }: Data) => (
         <div key={id} className={scss.Services__images}>
           <Link href={`services/${id}`}>
             <Image src={image} alt="error" className={scss.Services__image} />

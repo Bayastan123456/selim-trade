@@ -23,7 +23,6 @@ export default function Home() {
       <Offers />
       <OurWorks />
       <Service />
-      <Reviews />
 
       <div className="form_back">
         <Reviews />
