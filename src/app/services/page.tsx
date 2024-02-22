@@ -3,11 +3,12 @@ import Form from "@/components/Form/Form";
 import Navbar from "@/components/navbar/Navbar";
 import PageServices from "@/components/ServicesPage/ServicesPage";
 
+
 export function ServicesPage() {
   return (
     <>
       <Navbar />
-      <PageServices />
+      <PageServices/>
       <Form />
       <Footer />
     </>

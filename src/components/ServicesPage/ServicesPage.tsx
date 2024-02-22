@@ -12,11 +12,15 @@ import img7 from "../../assets/ServicesPage/image7.png";
 import img8 from "../../assets/ServicesPage/image8.png";
 import img9 from "../../assets/ServicesPage/image9.png";
 import img10 from "../../assets/ServicesPage/image10.png";
+import IndustrialGatePageInsid from "@/app/services/IndustrialGates/page";
+import Link from 'next/link';
 const ServicesPage = () => {
   const dataServices = [
     {
       image: img1,
-      text: "Промышленные секционные ворота",
+      text:   <Link href="/">
+      Промышленные секционные ворота
+    </Link>
     },
     {
       image: img2,
