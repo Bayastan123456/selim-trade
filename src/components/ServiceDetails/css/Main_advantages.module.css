@@ -48,13 +48,13 @@
   align-items: center;
 }
 .content .text__block_1_block_1 {
-  background-image: url(./../../assets/main_advantages/bg_1.svg);
+  background-image: url(./../../../assets/main_advantages/bg_1.svg);
 }
 .content .text__block_1_block_2 {
-  background-image: url(./../../assets/main_advantages/bg_2.svg);
+  background-image: url(./../../../assets/main_advantages/bg_2.svg);
 }
 .content .text__block_1_block_3 {
-  background-image: url(./../../assets/main_advantages/bg_3.svg);
+  background-image: url(./../../../assets/main_advantages/bg_3.svg);
 }
 .content .text__block_2 .text__block_2_block_1,
 .content .text__block_2 .text__block_2_block_2,
@@ -65,11 +65,11 @@
   align-items: center;
 }
 .content .text__block_2_block_1 {
-  background-image: url(./../../assets/main_advantages/bg_4.svg);
+  background-image: url(./../../../assets/main_advantages/bg_4.svg);
 }
 .content .text__block_2_block_2 {
-  background-image: url(./../../assets/main_advantages/bg_5.svg);
+  background-image: url(./../../../assets/main_advantages/bg_5.svg);
 }
 .content .text__block_2_block_3 {
-  background-image: url(./../../assets/main_advantages/bg_6.svg);
+  background-image: url(./../../../assets/main_advantages/bg_6.svg);
 }/*# sourceMappingURL=Main_advantages.module.css.map */
