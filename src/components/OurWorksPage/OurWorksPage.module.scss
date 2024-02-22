@@ -1,0 +1,30 @@
+@import "../../app/globalVariables.scss";
+
+.OurWorks__container {
+  .OurWorks__title {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 150px;
+
+    h3 {
+      font-size: 50px;
+      font-weight: bold;
+      width: 50%;
+    }
+    p {
+      width: 45%;
+    }
+  }
+  .images {
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .image {
+      //   border: 20px solid white;
+      width: 25em;
+    }
+  }
+}

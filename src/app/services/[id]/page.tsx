@@ -1,4 +1,6 @@
 import { servicesData } from "@/api/services";
+import Footer from "@/components/Footer/Footer";
+import Form from "@/components/Form/Form";
 import Main_advantages from "@/components/ServiceDetails/Main_advantages/Main_advantages";
 import SectionDoor from "@/components/ServiceDetails/SectionDoor/SectionDoor";
 import Navbar from "@/components/navbar/Navbar";
@@ -28,6 +30,8 @@ export default function ServiceDetailsPage({
       <Navbar />
       {res && <SectionDoor id={res.id} image={res.image} text={res.title} />}
       <Main_advantages />
+      <Form />
+      <Footer />
     </div>
   );
 }

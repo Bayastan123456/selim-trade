@@ -9,7 +9,7 @@ const Navbar: FC = () => {
     { title: "главная", url: "/" },
     { title: "услуги", url: "/services" },
     { title: "новости", url: "/news" },
-    { title: "наши работы", url: "/WeWork" },
+    { title: "наши работы", url: "/ourWorks" },
   ];
   return (
     <nav className={scss.nav}>
