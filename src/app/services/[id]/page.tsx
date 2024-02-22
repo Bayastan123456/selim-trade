@@ -1,8 +1,8 @@
+import React from "react";
 import { servicesData } from "@/api/services";
 import Main_advantages from "@/components/ServiceDetails/Main_advantages/Main_advantages";
 import SectionDoor from "@/components/ServiceDetails/SectionDoor/SectionDoor";
 import Navbar from "@/components/navbar/Navbar";
-import React from "react";
 
 export default function ServiceDetailsPage({
   params,
