@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
 const config: Config = {
   content: [
@@ -11,7 +12,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         back: "url('/Main/back.png')",
-        form: "url('/Form/image 20.png')"
+        form: "url('/Form/image 20.png')",
       },
     },
   },

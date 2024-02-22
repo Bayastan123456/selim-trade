@@ -1,77 +1,30 @@
-import React from "react";
 import { useMemo } from "react";
 import scss from "./ServicesPage.module.scss";
-import Image from "next/image";
-import img1 from "../../assets/ServicesPage/image1.png";
-import img2 from "../../assets/ServicesPage/image2.png";
-import img3 from "../../assets/ServicesPage/image3.png";
-import img4 from "../../assets/ServicesPage/image4.png";
-import img5 from "../../assets/ServicesPage/image5.png";
-import img6 from "../../assets/ServicesPage/image6.png";
-import img7 from "../../assets/ServicesPage/image7.png";
-import img8 from "../../assets/ServicesPage/image8.png";
-import img9 from "../../assets/ServicesPage/image9.png";
-import img10 from "../../assets/ServicesPage/image10.png";
-const ServicesPage = () => {
-  const dataServices = [
-    {
-      image: img1,
-      text: "Промышленные секционные ворота",
-    },
-    {
-      image: img2,
-      text: "Ролл ворота",
-    },
-    {
-      image: img3,
-      text: "Секционные ворота",
-    },
-    {
-      image: img4,
-      text: "Роль ставни",
-    },
-    {
-      image: img5,
-      text: "Откатные ворота",
-    },
-    {
-      image: img6,
-      text: "Распашные ворота",
-    },
-    {
-      image: img7,
-      text: "Автоматика и механизмы для откатных и распашных ворот",
-    },
-    {
-      image: img8,
-      text: "Автоматические шлагбаумы",
-    },
-    {
-      image: img9,
-      text: "Складные ворота",
-    },
-    {
-      image: img10,
-      text: "Отдельно стоящие калитки",
-    },
-  ];
+import Image, { StaticImageData } from "next/image";
+import { servicesData } from "@/api/services";
+import Link from "next/link";
+
+interface Data {
+  id: number;
+  title: string;
+  image: StaticImageData;
+}
+const ServicesPage: React.FC = () => {
   const dataServicesMap = useMemo(
     () =>
-      dataServices.map((item, index) => (
-        <div key={index} className={scss.Services__images}>
-          <Image
-            src={item.image}
-            alt="error"
-            className={scss.Services__image}
-          />
+      servicesData?.map(({ id, title, image }: Data) => (
+        <div key={id} className={scss.Services__images}>
+          <Link href={`services/${id}`}>
+            <Image src={image} alt="error" className={scss.Services__image} />
+          </Link>
+
           <div className={scss.Service_text_inner}>
-          <p>{item.text}</p>
+            <p>{title}</p>
           </div>
         </div>
       )),
     []
   );
-
 
   return (
     <div className={scss.services}>
@@ -87,9 +40,7 @@ const ServicesPage = () => {
           </h4>
         </div>
       </div>
-      <div className={scss.cards}>
-      {dataServicesMap}
-      </div>
+      <div className={scss.cards}>{dataServicesMap}</div>
     </div>
   );
 };
