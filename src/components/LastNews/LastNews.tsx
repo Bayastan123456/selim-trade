@@ -29,6 +29,8 @@ const LastNews = () => {
             src={item.image}
             alt="error"
             className={scss.lastNews__image}
+            width={400}
+            height={400}
           />
           <p>{item.text}</p>
         </div>

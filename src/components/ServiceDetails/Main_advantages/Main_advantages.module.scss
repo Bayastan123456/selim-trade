@@ -1,0 +1,84 @@
+.content {
+  margin: 90px 0 65px 0;
+  .text__block_1 {
+    margin-top: 60px;
+  }
+  .text__block_2 {
+    margin-top: 55px;
+  }
+  .text__block_1,
+  .text__block_2 {
+    display: flex;
+    justify-content: space-between;
+
+    // background-color: antiquewhite;
+    // border: 1px solid black;
+  }
+  .text__block_titles {
+    color: #414141;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .text__block_desc {
+    color: #414141;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: justify;
+  }
+  .text__block_desc:nth-child(even) {
+    margin: 0 20px 0 20px;
+  }
+  .text__block_1 {
+    .text__block_1_block_1,
+    .text__block_1_block_2,
+    .text__block_1_block_3 {
+      max-width: 510px;
+      max-height: 290px;
+      flex: 1;
+      align-items: center;
+    }
+  }
+  .text__block_1_block_1,
+  .text__block_1_block_2,
+  .text__block_1_block_3,
+  .text__block_2_block_1,
+  .text__block_2_block_2,
+  .text__block_2_block_3 {
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+  }
+
+  .text__block_1_block_1 {
+    background-image: url(./../../../assets/main_advantages/bg_1.svg);
+  }
+  .text__block_1_block_2 {
+    background-image: url(./../../../assets/main_advantages/bg_2.svg);
+  }
+  .text__block_1_block_3 {
+    background-image: url(./../../../assets/main_advantages/bg_3.svg);
+  }
+
+  .text__block_2 {
+    .text__block_2_block_1,
+    .text__block_2_block_2,
+    .text__block_2_block_3 {
+      max-width: 510px;
+      max-height: 290px;
+      flex: 1;
+      align-items: center;
+    }
+  }
+  .text__block_2_block_1 {
+    background-image: url(./../../../assets/main_advantages/bg_4.svg);
+  }
+  .text__block_2_block_2 {
+    background-image: url(./../../../assets/main_advantages/bg_5.svg);
+  }
+  .text__block_2_block_3 {
+    background-image: url(./../../../assets/main_advantages/bg_6.svg);
+  }
+}

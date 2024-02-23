@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import PageServices from "@/components/ServicesPage/ServicesPage";
 
 
-export function ServicesPage() {
+export default function ServicesPages() {
   return (
     <>
       <Navbar />
@@ -14,5 +14,3 @@ export function ServicesPage() {
     </>
   );
 }
-
-export default ServicesPage;

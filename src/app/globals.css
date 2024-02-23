@@ -37,7 +37,8 @@
 }
 .form_back {
   @apply bg-form bg-cover bg-center;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 @layer utilities {

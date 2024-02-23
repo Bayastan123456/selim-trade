@@ -1,4 +1,3 @@
-import React from "react";
 import { useMemo } from "react";
 import scss from "./ServicesPage.module.scss";
 import Image from "next/image";
@@ -12,15 +11,13 @@ import img7 from "../../assets/ServicesPage/image7.png";
 import img8 from "../../assets/ServicesPage/image8.png";
 import img9 from "../../assets/ServicesPage/image9.png";
 import img10 from "../../assets/ServicesPage/image10.png";
-import IndustrialGatePageInsid from "@/app/services/IndustrialGates/page";
-import Link from 'next/link';
+import { servicesData } from "@/api/services";
+import Link from "next/link";
 const ServicesPage = () => {
   const dataServices = [
     {
       image: img1,
-      text:   <Link href="/">
-      Промышленные секционные ворота
-    </Link>
+      text: "Промышленные секционные ворота",
     },
     {
       image: img2,
@@ -61,21 +58,19 @@ const ServicesPage = () => {
   ];
   const dataServicesMap = useMemo(
     () =>
-      dataServices.map((item, index) => (
-        <div key={index} className={scss.Services__images}>
-          <Image
-            src={item.image}
-            alt="error"
-            className={scss.Services__image}
-          />
+      servicesData?.map(({ id, title, image }: Data) => (
+        <div key={id} className={scss.Services__images}>
+          <Link href={`services/${id}`}>
+            <Image src={image} alt="error" className={scss.Services__image} />
+          </Link>
+
           <div className={scss.Service_text_inner}>
-          <p>{item.text}</p>
+            <p>{title}</p>
           </div>
         </div>
       )),
     []
   );
-
 
   return (
     <div className={scss.services}>
@@ -91,9 +86,7 @@ const ServicesPage = () => {
           </h4>
         </div>
       </div>
-      <div className={scss.cards}>
-      {dataServicesMap}
-      </div>
+      <div className={scss.cards}>{dataServicesMap}</div>
     </div>
   );
 };
