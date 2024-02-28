@@ -8,8 +8,8 @@ const Navbar: FC = () => {
   const menuItems = [
     { title: "главная", url: "/" },
     { title: "услуги", url: "/services" },
-    { title: "новости", url: "/news" },
-    { title: "наши работы", url: "/WeWork" },
+    { title: "новости", url: "/ourworks" },
+    { title: "наши работы", url: "/" },
   ];
   return (
     <nav className={scss.nav}>

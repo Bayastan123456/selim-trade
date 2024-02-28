@@ -4,6 +4,7 @@ import Main_advantages from "@/components/ServiceDetails/Main_advantages/Main_ad
 import SectionDoor from "@/components/ServiceDetails/SectionDoor/SectionDoor";
 import Navbar from "@/components/navbar/Navbar";
 import TypesOfGates from "@/components/TypesofGates/TypesOfGates";
+import Footer from "@/components/Footer/Footer";
 
 export default function ServiceDetailsPage({
   params,
@@ -30,6 +31,7 @@ export default function ServiceDetailsPage({
       {res && <SectionDoor id={res.id} image={res.image} text={res.title} />}
       <TypesOfGates/>
       <Main_advantages />
+      <Footer />
     </div>
   );
 }
