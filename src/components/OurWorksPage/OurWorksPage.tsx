@@ -9,6 +9,8 @@ import img6 from "../../assets/ourWorksPage/image 6.png";
 import img7 from "../../assets/ourWorksPage/image 7.png";
 import img8 from "../../assets/ourWorksPage/image 8.png";
 import img9 from "../../assets/ourWorksPage/image 9.png";
+import img10 from "../../assets/ourWorksPage/image 10.png";
+
 import Image from "next/image";
 
 const OurWorksPage = () => {
@@ -38,16 +40,20 @@ const OurWorksPage = () => {
       id: 6,
     },
     {
-      img: img7,
+      img: img10,
       id: 7,
     },
     {
-      img: img8,
+      img: img7,
       id: 8,
     },
     {
-      img: img9,
+      img: img8,
       id: 9,
+    },
+    {
+      img: img9,
+      id: 10,
     },
   ];
   return (
@@ -61,11 +67,29 @@ const OurWorksPage = () => {
         </p>
       </div>
       <div className={scss.images}>
-        {images.map((item) => (
-          <div key={item.id} className={scss.image}>
-            <Image src={item.img} alt="error" />
+        <div className={scss.containerImage}>
+          <div className={scss.images1}>
+            <Image src={img1} alt="error" />
+            <Image src={img4} alt="error" />
           </div>
-        ))}
+          <div className={scss.containerImage2}>
+            <div className={scss.image2}>
+              <Image src={img2} alt="error" />
+              <Image src={img3} alt="error" />
+            </div>
+            <Image src={img5} alt="error" className={scss.image3} />
+          </div>
+        </div>
+
+        <div>
+          <Image src={img6} alt="error" />
+          <Image src={img10} alt="error" />
+          <Image src={img8} alt="error" />
+        </div>
+        <div>
+          <Image src={img9} alt="error" />
+          <Image src={img7} alt="error" />
+        </div>
       </div>
     </div>
   );
