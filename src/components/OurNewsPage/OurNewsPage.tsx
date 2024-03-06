@@ -4,11 +4,15 @@ import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
+interface Data {
+    id: any;
+    title: any;
+    image: any;
+  }
 
 
 const OurNewsPageInside = () => {
-
+  
 
     const dataNewsMap = useMemo(
         () =>
