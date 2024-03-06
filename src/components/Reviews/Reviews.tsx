@@ -83,6 +83,7 @@ const Reviews = () => {
               alt="error"
               className={scss.reviews__image}
             />
+
             <div className={scss.reviews__title}>
               <p>{item.name}</p>
               <p>{item.title}</p>
@@ -95,28 +96,30 @@ const Reviews = () => {
   );
 
   return (
-    <div className={scss.reviews__container}>
-      <ReusableComponent title="Отзывы наших клиентов">
-        <div className={scss.reviews__blok}>{dataReviewsMap}</div>
-        <div className={scss.reviews__vectors}>
-          <Image
-            src={vector1}
-            alt="error"
-            width={50}
-            style={{ cursor: "pointer" }}
-            onClick={() => paginate(currentPage - 1)}
-            className={scss.reviewsVec1}
-          />
-          <Image
-            src={vector2}
-            alt="error"
-            width={50}
-            className={scss.reviewsVec1}
-            onClick={() => paginate(currentPage + 1)}
-          />
-        </div>
-      </ReusableComponent>
-    </div>
+    <section id="section1">
+      <div className={scss.reviews__container}>
+        <ReusableComponent title="Отзывы наших клиентов">
+          <div className={scss.reviews__blok}>{dataReviewsMap}</div>
+          <div className={scss.reviews__vectors}>
+            <Image
+              src={vector1}
+              alt="error"
+              width={50}
+              style={{ cursor: "pointer" }}
+              onClick={() => paginate(currentPage - 1)}
+              className={scss.reviewsVec1}
+            />
+            <Image
+              src={vector2}
+              alt="error"
+              width={50}
+              className={scss.reviewsVec1}
+              onClick={() => paginate(currentPage + 1)}
+            />
+          </div>
+        </ReusableComponent>
+      </div>
+    </section>
   );
 };
 

@@ -4,6 +4,7 @@ import NewsPageSection from "@/components/OurNewsPage/NewsPage/NewsPage";
 import Navbar from "@/components/navbar/Navbar";
 import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
+import SimilarNews from "@/components/OurNewsPage/SimilarNews/SimilarNews";
 
 export default function NewsPagesPage({ params }: { params: { id: string } }) {
   // console.log(params);
@@ -26,6 +27,7 @@ export default function NewsPagesPage({ params }: { params: { id: string } }) {
       {res && (
         <NewsPageSection id={res.id} image={res.image} text={res.title} />
       )}
+      <SimilarNews />
       <Form />
       <Footer />
     </div>

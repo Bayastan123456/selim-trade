@@ -1,85 +1,4 @@
 @import "../../app/globalVariables.scss";
-<<<<<<< HEAD
-
-.OurWorks__container {
-  .OurWorks__title {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 150px;
-
-    h3 {
-      font-size: 50px;
-      font-weight: bold;
-      width: 50%;
-    }
-    p {
-      width: 45%;
-    }
-  }
-  .images {
-    margin: auto;
-    width: 95vw;
-
-    display: flex;
-    // justify-content: space-between;
-    flex-direction: column;
-    // align-items: center;
-
-    .containerImages {
-      display: flex;
-      width: 100%;
-      .images1 {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-      }
-    }
-    // .image:nth-child(1) {
-    //   width: 465px;
-    //   height: 374px;
-    // }
-    // .image:nth-child(2) {
-    //   width: 345px;
-    //   height: 278px;
-    // }
-    // .image:nth-child(3) {
-    //   width: 345px;
-    //   height: 278px;
-    //   border: 20px solid red;
-    // }
-    // .image:nth-child(4) {
-    //   width: 465px;
-    //   height: 278px;
-    // }
-    // .image:nth-child(5) {
-    //   width: 800px;
-    //   height: 374px;
-    // }
-    // .image:nth-child(6) {
-    //   width: 369px;
-    //   height: 274px;
-    // }
-    // .image:nth-child(7) {
-    //   width: 369px;
-    //   height: 274px;
-    // }
-    // .image:nth-child(8) {
-    //   width: 562px;
-    //   height: 274px;
-    // }
-    // .image:nth-child(9) {
-    //   width: 825px;
-    //   height: 274px;
-    // }
-    // .image:nth-child(10) {
-    //   width: 465px;
-    //   height: 274px;
-    // }
-  }
-}
-=======
 .ourworks__images {
   .ourworks__image {
     border-radius: 15px;
@@ -90,7 +9,6 @@
     color: $white;
     font-weight: bold;
     font-weight: 800;
-
   }
 }
 .works {
@@ -134,20 +52,19 @@
       color: $black;
     }
   }
-//   .Newspage_text_inner {
-//     position: absolute;
+  //   .Newspage_text_inner {
+  //     position: absolute;
 
-//     text-decoration: none;
-//     color: #ffffff;
+  //     text-decoration: none;
+  //     color: #ffffff;
 
-//     border-radius: 5px;
+  //     border-radius: 5px;
 
-//     margin: -160px;
-//     margin-left: 28px;
+  //     margin: -160px;
+  //     margin-left: 28px;
 
-//     width: 385px;
+  //     width: 385px;
 
-//     text-align: left;
-//   }
+  //     text-align: left;
+  //   }
 }
->>>>>>> ee85d00689643d5c546c289818ba4d1e95b28451
