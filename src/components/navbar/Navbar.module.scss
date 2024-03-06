@@ -1,6 +1,6 @@
 @import "../../app/globalVariables.scss";
 
-.nav {
+.navb {
   margin-top: 20px;
   position: fixed;
   display: flex;
@@ -28,17 +28,17 @@
         justify-content: space-between;
         align-items: center;
         width: 50%;
-        
+
         li {
           text-decoration: none;
           transition: text-decoration 0.5s ease-in-out;
           cursor: pointer;
-          
+
           &:hover,
           &:focus {
             text-decoration: underline;
           }
-          
+
           &.active {
             text-decoration: underline;
           }

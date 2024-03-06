@@ -1,0 +1,47 @@
+@import "../../../app/globalVariables.scss";
+.lastNews__container2 {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  h3 {
+    padding-left: 7%;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .lastNews__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .lastNews__bloc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85vw;
+      .lastNews__images {
+        width: 30%;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        border-radius: 20px;
+        .lastNews__image {
+          position: absolute;
+        }
+        p {
+          position: absolute;
+          color: $white;
+          font-weight: bold;
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}

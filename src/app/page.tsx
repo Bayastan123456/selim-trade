@@ -9,7 +9,6 @@ import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
 import Service from "@/components/Service/Service";
 import Reviews from "@/components/Reviews/Reviews";
-import Main_advantages from "@/components/ServiceDetails/Main_advantages/Main_advantages";
 
 export default function Home() {
   return (
@@ -24,10 +23,9 @@ export default function Home() {
       <Offers />
       <OurWorks />
       <Service />
-      <Reviews />
-      {/* <Main_advantages /> */}
 
       <div className="form_back">
+        <Reviews />
         <Form />
         <Footer />
       </div>

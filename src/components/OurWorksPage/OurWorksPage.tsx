@@ -17,7 +17,7 @@ const WorksPage = () => {
   const dataOurWorks = [
     { image: img1, width: 465, height: 374 },
     { image: img2, width: 345, height: 278 },
-    { image: img3 , width: 490, height: 278},
+    { image: img3, width: 490, height: 278 },
     { image: img4, width: 465, height: 278 },
     { image: img5, width: 865, height: 374 },
     { image: img6, width: 369, height: 278 },
@@ -25,7 +25,6 @@ const WorksPage = () => {
     { image: img8, width: 562, height: 278 },
     { image: img9, width: 865, height: 278 },
     { image: img10, width: 465, height: 278 },
-
   ];
 
   const dataOurWorksMap = useMemo(
@@ -52,8 +51,8 @@ const WorksPage = () => {
           <div className={scss.works__text_desc}>
             <h4>
               Здесь мы собрали наши лучшие проекты, чтобы вы могли вдохновиться
-              идеями для собственного проекта. Вы найдете проект по душе и нраву,
-              который захотите воплотить в жизнь.
+              идеями для собственного проекта. Вы найдете проект по душе и
+              нраву, который захотите воплотить в жизнь.
             </h4>
           </div>
         </div>

@@ -4,12 +4,9 @@ import NewsPageSection from "@/components/OurNewsPage/NewsPage/NewsPage";
 import Navbar from "@/components/navbar/Navbar";
 import Form from "@/components/Form/Form";
 import Footer from "@/components/Footer/Footer";
+import SimilarNews from "@/components/OurNewsPage/SimilarNews/SimilarNews";
 
-export default function NewsPagesPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+export default function NewsPagesPage({ params }: { params: { id: string } }) {
   // console.log(params);
 
   function findObjectById(id: number) {
@@ -22,13 +19,16 @@ export default function NewsPagesPage({
   }
 
   const res = findObjectById(Number(params.id));
-  // console.log(res);
+  console.log(res);
 
   return (
     <div>
       <Navbar />
-      {res && <NewsPageSection id={res.id} image={res.image} text={res.title} />}
-      <Form/>
+      {res && (
+        <NewsPageSection id={res.id} image={res.image} text={res.title} />
+      )}
+      <SimilarNews />
+      <Form />
       <Footer />
     </div>
   );

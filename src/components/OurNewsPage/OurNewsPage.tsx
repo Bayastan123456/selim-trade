@@ -3,32 +3,30 @@ import { newsData } from "@/api/ournews";
 import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "../ReusableButton/Button";
 
 interface Data {
-    id: any;
-    title: any;
-    image: any;
-  }
-
+  id: any;
+  title: any;
+  image: any;
+}
 
 const OurNewsPageInside = () => {
-  
+  const dataNewsMap = useMemo(
+    () =>
+      newsData?.map(({ id, title, image }: Data) => (
+        <div key={id} className={scss.Newspage__images}>
+          <Link href={`news/${id}`}>
+            <Image src={image} alt="error" className={scss.Newspage__image} />
+          </Link>
 
-    const dataNewsMap = useMemo(
-        () =>
-        newsData?.map(({ id, title, image }: Data) => (
-            <div key={id} className={scss.Newspage__images}>
-              <Link href={`ourworks/${id}`}>
-                <Image src={image} alt="error" className={scss.Newspage__image} />
-              </Link>
-    
-              <div className={scss.Newspage_text_inner}>
-                <p>{title}</p>
-              </div>
-            </div>
-          )),
-        []
-      );
+          <div className={scss.Newspage_text_inner}>
+            <p>{title}</p>
+          </div>
+        </div>
+      )),
+    []
+  );
   return (
     <div>
       <div className={scss.news}>
@@ -41,7 +39,11 @@ const OurNewsPageInside = () => {
             </h4>
           </div>
         </div>
-        <div className={scss.cards}>{dataNewsMap}</div>
+        <div className={scss.cards}>
+          {dataNewsMap}
+
+          <button>загрузить ещё</button>
+        </div>
       </div>
     </div>
   );
