@@ -14,48 +14,7 @@ import img10 from "../../assets/ServicesPage/image10.png";
 import { servicesData } from "@/api/services";
 import Link from "next/link";
 const ServicesPage = () => {
-  const dataServices = [
-    {
-      image: img1,
-      text: "Промышленные секционные ворота",
-    },
-    {
-      image: img2,
-      text: "Ролл ворота",
-    },
-    {
-      image: img3,
-      text: "Секционные ворота",
-    },
-    {
-      image: img4,
-      text: "Роль ставни",
-    },
-    {
-      image: img5,
-      text: "Откатные ворота",
-    },
-    {
-      image: img6,
-      text: "Распашные ворота",
-    },
-    {
-      image: img7,
-      text: "Автоматика и механизмы для откатных и распашных ворот",
-    },
-    {
-      image: img8,
-      text: "Автоматические шлагбаумы",
-    },
-    {
-      image: img9,
-      text: "Складные ворота",
-    },
-    {
-      image: img10,
-      text: "Отдельно стоящие калитки",
-    },
-  ];
+
   const dataServicesMap = useMemo(
     () =>
       servicesData?.map(({ id, title, image }: Data) => (

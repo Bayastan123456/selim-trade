@@ -30,7 +30,7 @@ export default function ServiceDetailsPage({
     <div>
       <Navbar />
       {res && <SectionDoor id={res.id} image={res.image} text={res.title} />}
-      <TypesOfGates/>
+      <TypesOfGates />
       <Main_advantages />
       <Form />
       <Footer />
