@@ -14,7 +14,11 @@ import img10 from "../../assets/ServicesPage/image10.png";
 import { servicesData } from "@/api/services";
 import Link from "next/link";
 const ServicesPage = () => {
-
+  interface Data {
+    id: any;
+    title: any;
+    image: any;
+  }
   const dataServicesMap = useMemo(
     () =>
       servicesData?.map(({ id, title, image }: Data) => (
