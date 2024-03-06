@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
+<<<<<<< HEAD
 const OurNewsPageInside = () => {
   const dataNewsMap = useMemo(
     () =>
@@ -20,6 +21,33 @@ const OurNewsPageInside = () => {
       )),
     []
   );
+=======
+interface Data {
+    id: any;
+    title: any;
+    image: any;
+  }
+
+
+const OurNewsPageInside = () => {
+  
+
+    const dataNewsMap = useMemo(
+        () =>
+        newsData?.map(({ id, title, image }: Data) => (
+            <div key={id} className={scss.Newspage__images}>
+              <Link href={`ourworks/${id}`}>
+                <Image src={image} alt="error" className={scss.Newspage__image} />
+              </Link>
+    
+              <div className={scss.Newspage_text_inner}>
+                <p>{title}</p>
+              </div>
+            </div>
+          )),
+        []
+      );
+>>>>>>> ee85d00689643d5c546c289818ba4d1e95b28451
   return (
     <div>
       <div className={scss.news}>

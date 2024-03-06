@@ -12,11 +12,11 @@ const current_year = new Date().getFullYear();
 const Footer: FC = () => {
   const menuItems = [
     { title: "Главная", url: "/" },
-    { title: "О нас", url: "/AboutUs" },
+    { title: "О нас", url: "/" },
     { title: "Услуги", url: "/services" },
-    { title: "Работы", url: "/Work" },
-    { title: "Отзывы", url: "/Reviews" },
-    { title: "Новости", url: "/News" },
+    { title: "Работы", url: "/workspage" },
+    { title: "Отзывы", url: "/" },
+    { title: "Новости", url: "/ourworks" },
   ];
   const menuItemsMap = useMemo(
     () =>

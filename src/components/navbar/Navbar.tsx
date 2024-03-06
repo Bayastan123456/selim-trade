@@ -8,15 +8,16 @@ const Navbar: FC = () => {
   const menuItems = [
     { title: "главная", url: "/" },
     { title: "услуги", url: "/services" },
-    { title: "новости", url: "/news" },
-    { title: "наши работы", url: "/ourWorks" },
+    { title: "новости", url: "/ourworks" },
+    { title: "наши работы", url: "/workspage" },
   ];
   return (
     <nav className={scss.nav}>
       <div className={scss.navbar}>
         <div className={scss.nav__container}>
-          <Image src={logo} alt="logo" />
-
+          <Link href="/">
+            <Image src={logo} alt="logo" />
+          </Link>
           <ul className={scss.nav__ul}>
             {menuItems.map((item, index) => (
               <li key={index}>

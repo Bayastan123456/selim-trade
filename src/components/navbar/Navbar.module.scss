@@ -28,16 +28,23 @@
         justify-content: space-between;
         align-items: center;
         width: 50%;
-
+        
         li {
           text-decoration: none;
           transition: text-decoration 0.5s ease-in-out;
           cursor: pointer;
-        }
-        li:hover {
-          text-decoration: underline;
+          
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+          }
+          
+          &.active {
+            text-decoration: underline;
+          }
         }
       }
+
       .nav__adress {
         display: flex;
         align-items: flex-end;
