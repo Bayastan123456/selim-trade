@@ -5,10 +5,15 @@ import logo from "../../assets/navbar/logo.svg";
 import logo1 from "../../assets/navbar/logo1.svg";
 import phone from "../../assets/navbar/Vector.svg";
 import menu from "../../assets/navbar/menu.svg";
+import menu__black from "../../assets/navbar/menu__black.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar: FC = () => {
+interface NavbarProps {
+  isMobile: boolean;
+}
+
+const Navbar: FC<NavbarProps> = ({ isMobile }) => {
   const menuItems = [
     { title: "главная", url: "/" },
     { title: "услуги", url: "/services" },
@@ -53,12 +58,17 @@ const Navbar: FC = () => {
       <div className={scss.navbar}>
         <div className={scss.nav__container}>
           <Link href="/">
-            <Image src={logo} alt="logo" className={scss.nav__logo} />
+            <Image
+              src={isMobile ? logo1 : logo}
+              alt="logo"
+              className={scss.nav__logo}
+              width={100}
+            />
           </Link>
 
           {/* Кнопка открытия модального бургер-меню */}
           <button className={scss.burgerButton} onClick={openModal}>
-            <Image src={menu} alt="menu" />
+            <Image src={isMobile ? menu__black : menu} alt="menu" />
           </button>
 
           <ul
