@@ -25,8 +25,8 @@ export default function ServicesPages() {
     <>
       <Navbar isMobile={isMobile} />
       <PageServices />
-      <Form />
-      <Footer />
+      {/* <Form /> */}
+      {/* <Footer /> */}
     </>
   );
 }
