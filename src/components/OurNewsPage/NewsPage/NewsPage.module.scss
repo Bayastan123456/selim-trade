@@ -8,9 +8,46 @@
   flex-direction: row;
   column-gap: 100px;
   margin-bottom: 200px;
+  @include breackpoint(ms) {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    padding-top: 118px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  @include breackpoint(md) {
+    width: 50%;
+     margin-left: auto;
+     margin-right: auto;
+     align-items: center;
+  }
+  @include breackpoint(sm) {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+ }
+ @include breackpoint(xm) {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  // display: none;
+}
+
   .newspage__inner {
-    width: 840px;
+
+    max-width: 840px;
     margin-top: 185px;
+    @include breackpoint(ms) {
+      flex-direction: column;
+      width: 70%;
+      justify-content: center;
+      padding-top: 118px;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
   }
   .newspage__image {
     height: auto;
