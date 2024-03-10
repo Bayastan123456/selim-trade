@@ -1,16 +1,27 @@
 @import "../../app/globalVariables.scss";
 .Services__images {
+  @include breackpoint(sm) {
+    width: 80%;
+  }
+
   .Services__image {
     border-radius: 15px;
     width: 670px;
     height: 350px;
+
+    @include breackpoint(xs) {
+      height: 250px;
+    }
   }
   p {
     color: $white;
     font-weight: bold;
     font-weight: 800;
     // font-size: 27px;
-
+    @include breackpoint(xm) {
+      font-size: 12px;
+      width: 50%;
+    }
   }
 }
 .services {
@@ -30,11 +41,15 @@
     margin-bottom: 105px;
   }
 
-  h1 {
+  h2 {
     font-size: 70px;
     line-height: 105px;
     color: $black;
     font-weight: 700;
+    @include breackpoint(sm) {
+      font-size: 30px;
+      line-height: normal;
+    }
   }
   .services__text {
     padding-top: 192px;
@@ -43,18 +58,30 @@
     display: flex;
     column-gap: 190px;
     align-items: center;
+    @include breackpoint(ms) {
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 100px;
+    }
   }
   .services__text_desc {
     text-align: justify;
     width: 652px;
 
     display: flex;
+    @include breackpoint(sm) {
+      text-align: center;
+      width: auto;
+    }
 
     h4 {
       font-size: 19px;
       font-weight: 300;
       line-height: 26.6px;
       color: $black;
+      @include breackpoint(sm) {
+        font-size: 14px;
+      }
     }
   }
   .Service_text_inner {
@@ -72,6 +99,9 @@
     width: auto;
     max-width: 587px;
     text-align: left;
-  
+    @include breackpoint(xm) {
+      width: 50%;
+      margin-top: -100px;
+    }
   }
 }

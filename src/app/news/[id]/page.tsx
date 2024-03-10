@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { newsData } from "@/api/ournews";
 import NewsPageSection from "@/components/OurNewsPage/NewsPage/NewsPage";
 import Navbar from "@/components/navbar/Navbar";
@@ -21,9 +22,25 @@ export default function NewsPagesPage({ params }: { params: { id: string } }) {
   const res = findObjectById(Number(params.id));
   console.log(res);
 
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1200);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div>
-      <Navbar />
+      <Navbar isMobile={isMobile} />
       {res && (
         <NewsPageSection id={res.id} image={res.image} text={res.title} />
       )}
