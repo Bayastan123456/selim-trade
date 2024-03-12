@@ -14,7 +14,9 @@ const Form = () => {
               <input type="number" placeholder="телефон" />
               <Button title="оставить зявку" />
             </div>
+            
             <textarea  placeholder="сообщение" />
+         
           </form>
         </div>
       </ReusableComponent>
