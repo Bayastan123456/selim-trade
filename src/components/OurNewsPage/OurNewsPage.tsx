@@ -39,11 +39,8 @@ const OurNewsPageInside = () => {
             </h4>
           </div>
         </div>
-        <div className={scss.cards}>
-          {dataNewsMap}
-
-          <button>загрузить ещё</button>
-        </div>
+        <div className={scss.cards}>{dataNewsMap}</div>
+        <button>загрузить ещё</button>
       </div>
     </div>
   );
