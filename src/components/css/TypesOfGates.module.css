@@ -1,0 +1,33 @@
+.service__container {
+  padding-top: 40px;
+}
+.service__container .service__blok {
+  margin-top: 40px;
+  margin-bottom: 140px;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: space-between;
+}
+.service__container .service__blok .service__card {
+  width: 256px;
+  position: relative;
+}
+.service__container .service__blok .service__card .image_cards img {
+  border-radius: 20px;
+}
+.service__container .service__blok .service__card .service__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.service__container .service__blok .service__card p {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+  margin: 0;
+}/*# sourceMappingURL=TypesOfGates.module.css.map */

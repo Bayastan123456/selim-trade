@@ -1,0 +1,49 @@
+.ourworks__images .ourworks__image {
+  border-radius: 15px;
+}
+.ourworks__images p {
+  color: #fcfcfc;
+  font-weight: bold;
+  font-weight: 800;
+}
+
+.works {
+  background-image: url("../../assets/Workspage/bgimage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.works .cards {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-top: 114px;
+  justify-content: center;
+  row-gap: 40px;
+  margin-bottom: 264px;
+}
+.works h1 {
+  font-size: 50px;
+  line-height: 55px;
+  color: #414141;
+  font-weight: 700;
+}
+.works .works__text {
+  padding-top: 201px;
+  justify-content: center;
+  display: flex;
+  -moz-column-gap: 295px;
+       column-gap: 295px;
+  align-items: center;
+}
+.works .works__text_desc {
+  text-align: justify;
+  width: 639px;
+  display: flex;
+}
+.works .works__text_desc h4 {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26.6px;
+  color: #414141;
+}/*# sourceMappingURL=OurWorksPage.module.css.map */
