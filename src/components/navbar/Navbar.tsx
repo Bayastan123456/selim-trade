@@ -10,7 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface NavbarProps {
-  isMobile: boolean;
+  isMobile?: boolean;
 }
 
 const Navbar: FC<NavbarProps> = ({ isMobile }) => {
@@ -23,7 +23,6 @@ const Navbar: FC<NavbarProps> = ({ isMobile }) => {
 
   const [isOpen, setIsOpen] = useState(false);
   const modalRef = useRef<HTMLUListElement>(null);
-
   const openModal = () => {
     setIsOpen(true);
   };

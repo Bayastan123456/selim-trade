@@ -1,7 +1,7 @@
 $black: #414141; // just black color
 $white: #fcfcfc; // just white color
-$color1: #105BFB;  // gradient
-$color2: #5061FF; // gradient
+$color1: #105bfb; // gradient
+$color2: #5061ff; // gradient
 // linear-gradient(to right, $color1 0%, $color1 100%, $color2 100%, $color2 100%);
 @mixin breackpoint($point) {
   @if $point==xxl {

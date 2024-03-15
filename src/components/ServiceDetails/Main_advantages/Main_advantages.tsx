@@ -30,8 +30,7 @@ const Main_advantages: React.FC = () => {
               являются оптимальным решением для любых объектов.
             </p>
           </div>
-        </div>
-        <div className={style.text__block_2}>
+
           <div className={style.text__block_2_block_1}>
             <h3 className={style.text__block_titles}>ЭЛЕГАНТНЫЙ ВНЕШНИЙ ВИД</h3>
             <p className={style.text__block_desc}>
