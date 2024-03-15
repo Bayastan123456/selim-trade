@@ -2,6 +2,13 @@
 
 .service__container {
   padding-top: 40px;
+  margin: 5px;
+  h1 {
+    @include breackpoint(xm) {
+      text-align: left;
+      font-size: 25px;
+    }
+  }
 
   .service__blok {
     margin-top: 40px;
@@ -10,13 +17,33 @@
     column-gap: 20px;
     justify-content: space-between;
 
+    @include breackpoint(ms) {
+      flex-wrap: wrap;
+    }
+    @include breackpoint(sm) {
+      justify-content: center;
+      margin-top: 0;
+    }
+
     .service__card {
       width: 256px;
       position: relative;
+      @include breackpoint(ms) {
+        width: auto;
+      }
 
       .image_cards {
-        img {
-            border-radius: 20px;
+        border-radius: 20px;
+        @include breackpoint(ms) {
+          margin-top: 20px;
+          width: 300px;
+        }
+        @include breackpoint(md) {
+          width: 350px;
+          height: 200px;
+        }
+        @include breackpoint(sm) {
+          width: 400px;
         }
       }
 
@@ -25,17 +52,18 @@
         bottom: 0;
         left: 0;
         padding: 10px;
-
         width: 100%;
         box-sizing: border-box;
-      }
-
-      p {
-        font-weight: 800;
-        font-size: 20px;
-        line-height: 22px;
-        color: rgba(255, 255, 255, 1);
-        margin: 0;
+        p {
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 1);
+          margin: 0;
+          @include breackpoint(sm) {
+            font-size: 15px;
+          }
+        }
       }
     }
   }

@@ -10,7 +10,8 @@ export default function OurWorksPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1200);
+      const isMobileQuery = window.matchMedia("(max-width: 1200px)");
+      setIsMobile(isMobileQuery.matches);
     };
 
     handleResize();
