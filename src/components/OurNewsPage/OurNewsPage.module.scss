@@ -4,11 +4,26 @@
     border-radius: 20px;
     width: 440px;
     height: 300px;
+    @include breackpoint(xm) {
+      width: 350px;
+      height: 250px;
+    }
+    @include breackpoint(xs) {
+      width: 290px;
+    }
   }
   p {
     color: $white;
     font-weight: bold;
     font-weight: 800;
+    @include breackpoint(xm) {
+      font-size: 15px;
+      width: 300px;
+    }
+    @include breackpoint(xs) {
+      width: 250px;
+      font-size: 12px;
+    }
   }
 }
 .news {
@@ -37,11 +52,17 @@
     color: $white;
   }
 
-  h1 {
+  h2 {
     font-size: 50px;
     line-height: 55px;
     color: $black;
     font-weight: 700;
+    @include breackpoint(ms) {
+      margin-bottom: 20px;
+    }
+    @include breackpoint(xm) {
+      font-size: 30px;
+    }
   }
   .news__text {
     padding-top: 165px;
@@ -49,18 +70,27 @@
     display: flex;
     column-gap: 276px;
     align-items: center;
+    @include breackpoint(ms) {
+      flex-direction: column;
+    }
   }
   .news__text_desc {
     text-align: justify;
     width: 440px;
-
     display: flex;
+    @include breackpoint(xm) {
+      text-align: center;
+      width: 350px;
+    }
 
     h4 {
       font-size: 19px;
       font-weight: 300;
       line-height: 26.6px;
       color: $black;
+      @include breackpoint(xm) {
+        font-size: 15px;
+      }
     }
   }
   .Newspage_text_inner {
@@ -77,5 +107,11 @@
     width: 385px;
 
     text-align: left;
+    @include breackpoint(xm) {
+      margin-left: 5px;
+    }
+    @media all and (max-width: 465px) {
+      width: 200px;
+    }
   }
 }

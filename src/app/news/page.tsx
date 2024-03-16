@@ -26,8 +26,8 @@ export default function OurNewsPage() {
     <>
       <Navbar isMobile={isMobile} />
       <OurNewsPageInside />
-      <Form />
-      <Footer />
+      {/* <Form />
+      <Footer /> */}
     </>
   );
 }
