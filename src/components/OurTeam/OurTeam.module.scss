@@ -14,6 +14,13 @@
     color: $black;
     font-weight: 700;
     margin-bottom: 20px;
+    @include breackpoint(ms) {
+      font-size: 35px;
+    }
+    @include breackpoint(xm) {
+      font-size: 25px;
+      line-height: normal;
+    }
   }
   .ourTeam__text {
     padding-top: 160px;
@@ -26,11 +33,24 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @include breackpoint(xm) {
+      width: 350px;
+    }
+    @include breackpoint(xs) {
+      width: 300px;
+    }
     p {
       font-size: 20px;
       font-weight: 300;
       line-height: 28px;
       color: $black;
+      @include breackpoint(ms) {
+        font-size: 15px;
+      }
+      @include breackpoint(xm) {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
 }

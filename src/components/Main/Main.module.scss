@@ -2,11 +2,24 @@
 .main {
   .main__text {
     padding-top: 140px;
+    @include breackpoint(md) {
+      padding-top: 100px;
+    }
     h1 {
       font-size: 80px;
       font-weight: 700;
       line-height: 88px;
       color: $white;
+      @include breackpoint(md) {
+        font-size: 50px;
+      }
+      @include breackpoint(sm) {
+        line-height: 50px;
+      }
+      @include breackpoint(xm) {
+        font-size: 40px;
+        line-height: 40px;
+      }
     }
     p {
       font-size: 25px;
@@ -15,6 +28,28 @@
       color: $white;
       margin-top: 12px;
       margin-bottom: 40px;
+      @include breackpoint(md) {
+        font-size: 20px;
+      }
+      @include breackpoint(xm) {
+        font-size: 18px;
+        margin-top: 50px;
+      }
+      @include breackpoint(xs) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+    button {
+      @include breackpoint(md) {
+        width: 250px;
+        height: 50px;
+      }
+      @include breackpoint(xm) {
+        font-size: 15px;
+        line-height: normal;
+        width: 200px;
+      }
     }
   }
 }

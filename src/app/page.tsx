@@ -18,9 +18,9 @@ export default function Home() {
         <Main />
       </div>
       <OurTeam />
-      <LastNews />
-      <Advantages />
       <Offers />
+      <Advantages />
+      <LastNews />
       <OurWorks />
       <Service />
 
