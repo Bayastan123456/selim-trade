@@ -10,7 +10,8 @@ export default function OurNewsPage() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 1200);
+      const isMobileQuery = window.matchMedia("(max-width: 1200px)");
+      setIsMobile(isMobileQuery.matches);
     };
 
     handleResize();
@@ -25,8 +26,8 @@ export default function OurNewsPage() {
     <>
       <Navbar isMobile={isMobile} />
       <OurNewsPageInside />
-      <Form />
-      <Footer />
+      {/* <Form />
+      <Footer /> */}
     </>
   );
 }
