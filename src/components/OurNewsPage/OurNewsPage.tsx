@@ -12,21 +12,24 @@ interface Data {
 }
 
 const OurNewsPageInside = () => {
-  //   const [data, setData] = useState(null);
+  const [data, setData] = useState(null);
 
-  //   useEffect(() => {
-  //     const fetchData = async () => {
-  //       try {
-  //         const response = await fetch('https://selim-trade-2edf3d5543ca.herokuapp.com/swagger-ui/index.html#/News/getLastNews');
-  //         const jsonData = await response.json();
-  //         setData(jsonData);
-  //       } catch (error) {
-  //         console.error('Error fetching data:', error);
-  //       }
-  //     };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          "https://selim-trade-2edf3d5543ca.herokuapp.com/api-docs"
+        );
+        const jsonData = await response.json();
+        setData(jsonData);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
 
-  //     fetchData();
-  //   }, []);
+    fetchData();
+    console.log(data);
+  }, []);
 
   const dataNewsMap = useMemo(
     () =>
