@@ -8,17 +8,101 @@
   flex-direction: row;
   column-gap: 100px;
   margin-bottom: 200px;
+  @include breackpoint(ms) {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 118px;
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  @include breackpoint(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @include breackpoint(sm) {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+ }
+ @include breackpoint(xm) {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 560px;
+  
+}
+@include breackpoint(xs) {
+width: 326px;
+justify-content: center;
+}
+
   .newspage__inner {
-    width: 840px;
+
+    max-width: 840px;
     margin-top: 185px;
+    @include breackpoint(ms) {
+      flex-direction: column;
+      margin-top: 10px;
+      justify-content: center;
+      // padding-top: 118px;
+      margin-left: auto;
+      margin-right: auto;
+     
+    }
   }
   .newspage__image {
     height: auto;
+    @include breackpoint(ms) {
+      
+      order: 1;
+    }
+    @include breackpoint(md) {
+      
+      order: 1;
+    }
+    @include breackpoint(sm) {
+    
+      order: 1;
+    }
+    @include breackpoint(xm) {
+      
+      order: 1;
+    }
+    @include breackpoint(xs) {
+      width: 336px;
+      order: 1;
+    }
   }
 
   .newspage__text {
     font-size: 20px;
     margin-bottom: 30px;
+    @include breackpoint(ms) {
+      text-align: justify
+    }
+    @include breackpoint(md) {
+      text-align: justify
+    }
+    @include breackpoint(sm) {
+      font-weight: 300px;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: justify
+    }
+    @include breackpoint(xm) {
+      font-weight: 300px;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: justify
+    }
+    @include breackpoint(xs) {
+      font-weight: 300px;
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 
   h2 {
@@ -27,5 +111,22 @@
     font-weight: 700;
     line-height: 60px;
     margin-bottom: 30px;
+    @include breackpoint(md) {
+      font-size: 30px;
+      line-height: 28px;
+      
+    }
+    @include breackpoint(sm) {
+      font-size: 26px;
+      line-height: 28px;
+    }
+    @include breackpoint(xm) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @include breackpoint(xs) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
