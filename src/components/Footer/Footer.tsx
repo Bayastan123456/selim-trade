@@ -4,6 +4,7 @@ import logo from "../../assets/Footer/logo.png";
 import insta from "../../assets/Footer/instagram.png";
 import whatsapp from "../../assets/Footer/wa.png";
 import map from "../../assets/Footer/map.png";
+import map2 from "../../assets/Footer/map380.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -33,7 +34,7 @@ const Footer: FC = () => {
       <div className={scss.footer__inner}>
         <div className={scss.footer__container}>
           <div className={scss.left_side}>
-            <Image src={logo} alt="logo" width={100} />
+            <Image className={scss.image_logo} src={logo} alt="logo" width={100} />
             <p className={scss.socialText}>СОЦИАЛЬНЫЕ СЕТИ</p>
             <div className={scss.social}>
               <Link
@@ -69,7 +70,8 @@ const Footer: FC = () => {
               href="https://www.google.com/maps/place/selim.kg/@42.848181,74.587368,17z/data=!3m1!4b1!4m6!3m5!1s0x389ec9d8319b4ead:0x35283f9b848f49a!8m2!3d42.848181!4d74.587368!16s%2Fg%2F11gdkx3jh6?entry=ttu"
               target="__blank"
             >
-              <Image src={map} alt="navigation" width={580} />
+              <Image className={scss.map1} src={map} alt="navigation" width={580} />
+              <Image className={scss.map2} src={map2} alt="navigation" width={130} />
             </Link>
           </div>
         </div>

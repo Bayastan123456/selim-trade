@@ -19,37 +19,179 @@
     color: $black;
     border-radius: 35px;
     background-position: 59% 50%;
+    @include breackpoint(md) {
+      background: rgba(249, 249, 249, 1) url("../../assets/Footer/map-pin2.png")
+        no-repeat;
+      background-position: 57% 21%;
+      border-radius: 11px;
+    }
+    @include breackpoint(sm) {
+      background: rgba(249, 249, 249, 1) url("../../assets/Footer/map-pin2.png")
+        no-repeat;
+      background-position: 80% 17%;
+      border-radius: 10px;
+    }
+    @include breackpoint(xm) {
+      background: rgba(249, 249, 249, 1) url("../../assets/Footer/map-pin2.png")
+        no-repeat;
+      background-position: 70% 8%;
+      border-radius: 8px;
+    }
+    @include breackpoint(xs) {
+      background: rgba(249, 249, 249, 1) url("../../assets/Footer/map-pin2.png")
+        no-repeat;
+      background-position: 70% 8%;
+      border-radius: 8px;
+    }
 
     .footer__container {
       display: flex;
+      @include breackpoint(xm) {
+        height: 262px;
+      }
+      @include breackpoint(xs) {
+        height: 262px;
+      }
 
       .left_side {
         padding-left: 59px;
         padding-top: 31px;
         width: 250px;
+        @include breackpoint(ms) {
+          padding-left: 14px;
+          padding-top: 10px;
+          width: 90px;
+        }
+        @include breackpoint(md) {
+          padding-left: 13px;
+          padding-top: 10px;
+          width: 78px;
+        }
+        @include breackpoint(sm) {
+          padding-left: 10px;
+          padding-top: 10px;
+          width: 78px;
+        }
+        @include breackpoint(xm) {
+          padding-left: 10px;
+          padding-top: 10px;
+          width: 78px;
+        }
+        @include breackpoint(xs) {
+          width: 78px;
+        }
+        .image_logo {
+          @include breackpoint(xm) {
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+        }
+        @include breackpoint(xs) {
+          padding-left: 10px;
+          padding-top: 10px;
+        }
 
         .socialText {
           padding-top: 142px;
           font-weight: 500;
+          @include breackpoint(ms) {
+            font-size: 15px;
+            line-height: 17px;
+          }
+          @include breackpoint(md) {
+            font-size: 13px;
+            line-height: 17px;
+          }
+          @include breackpoint(sm) {
+            font-size: 13px;
+            line-height: 17px;
+          }
+          @include breackpoint(xm) {
+            font-size: 12px;
+            line-height: 17px;
+          }
+          @include breackpoint(xs) {
+            font-size: 12px;
+            line-height: 17px;
+          }
         }
       }
       .social {
         display: flex;
         column-gap: 10px;
-        padding-top: 10px;
-        padding-bottom: 31px;
+        padding-top: 5px;
+        @include breackpoint(sm) {
+          padding-top: 3px;
+          padding-bottom: 5px;
+        }
+        @include breackpoint(xs) {
+          padding-top: 3px;
+        }
       }
 
       .footer__ul {
         padding-left: 70px;
         padding-top: 41px;
         font-weight: 500;
+        @include breackpoint(ms) {
+          font-size: 15px;
+          padding-left: 91px;
+          padding-top: 30px;
+
+        }
+        @include breackpoint(md) {
+          font-size: 13px;
+
+        }
+        @include breackpoint(sm) {
+          height: 50px;
+          font-size: 13px;
+          column-gap: 10px;
+        }
+        @include breackpoint(xm) {
+          position: absolute;
+          column-gap: 15px;
+          height: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 12px;
+          margin-left: 81px;
+          margin-top: 151px;
+          width: 212px;
+          column-gap: 10px;
+        }
+        @include breackpoint(xs) {
+          position: absolute;
+          column-gap: 15px;
+          height: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 12px;
+          margin-left: 44px;
+          margin-top: 131px;
+          width: 212px;
+        }
 
         li {
           text-decoration: none;
           transition: text-decoration 0.5s ease-in-out;
           cursor: pointer;
           padding-bottom: 15px;
+          @include breackpoint(sm) {
+            padding-bottom: 11px;
+            font-size: 14px;
+            font-weight: 500;
+          }
+          @include breackpoint(xm) {
+            padding-bottom: 2px;
+            font-size: 12px;
+            font-weight: 500;
+          }
+          @include breackpoint(xs) {
+            padding-bottom: 2px;
+            font-size: 12px;
+            font-weight: 500;
+          }
         }
         li:hover {
           text-decoration: underline;
@@ -59,12 +201,131 @@
     .contacts {
       padding-top: 41px;
       padding-left: 148px;
-      width: 313px;
+      max-width: auto;
+      @include breackpoint(xxl) {
+        padding-top: 44px;
+        padding-left:87px ; 
+        height: auto; 
+        text-align: center;
+      }
+      @include breackpoint(ms) {
+        padding-top: 32px;
+        padding-left:87px ; 
+        height: auto; 
+        text-align: center;
+      }
+      @include breackpoint(md) {
+        padding-top: 32px;
+        padding-left:50px ; 
+        height: auto; 
+        text-align: center;
+      }
+      @include breackpoint(sm) {
+        padding-top: 44px;
+        padding-left:77px ;
+        max-width: 218px; 
+        height: auto; 
+        text-align: center;
+      }
+      @include breackpoint(xm) {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 15px;
+        padding-left:10px ;
+        max-width: 313px; 
+        height: auto; 
+        text-align: center;
+        justify-content:center; 
+      }
+      @include breackpoint(xs) {
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 1px;
+        width: 131px;
+        height: 131px;
+      }
 
       .up_side {
         padding-bottom: 30px;
         text-align: right;
         font-weight: 500;
+        @include breackpoint(xxl) {
+          text-align: center;
+          justify-content: center;
+          padding-bottom: 15px;
+          display: block !important;
+          flex-wrap: nowrap;
+        }
+        @include breackpoint(ms) {
+          text-align: center;
+          justify-content: center;
+          padding-bottom: 15px;
+          display: block !important;
+          flex-wrap: nowrap;
+        }
+        @include breackpoint(md) {
+       
+          padding-bottom: 15px;
+       
+        }
+        @include breackpoint(sm) {
+          text-align: right;
+          height: 70px;
+        
+          padding-bottom: 15px;
+          width: 131px;
+        }
+        @include breackpoint(xm) {
+        
+          height: 60px;
+         
+          padding-bottom: 2px;
+          width: 131px;
+        }
+        @include breackpoint(xs) {
+          padding-bottom: 2px;
+          text-align: right;
+        }
+        p {
+          @include breackpoint(xxl) {
+            padding-bottom: 5px;
+            width: 170px;
+            font-weight: 500;
+            font-size: 16px;
+          }
+          @include breackpoint(ms) {
+            padding-bottom: 5px;
+            width: 170px;
+            font-weight: 500;
+            font-size: 14px;
+          }
+          @include breackpoint(md) {
+            padding-bottom: 2px;
+            width: 120px;
+            font-weight: 500;
+            font-size: 12px;
+          }
+          @include breackpoint(sm) {
+            padding-bottom: 2px;
+            width: 120px;
+            font-weight: 500;
+            font-size: 12px;
+          }
+          @include breackpoint(xm) {
+            padding-bottom: 2px;
+            width: 120px;
+            font-weight: 500;
+            font-size: 12px;
+          }
+          @include breackpoint(xs) {
+            padding-bottom: 2px;
+            width: 120px;
+            font-weight: 500;
+            font-size: 12px;
+          }
+        }
       }
       .down_side {
         display: flex;
@@ -72,17 +333,144 @@
         text-align: center;
         flex-direction: column;
         padding-bottom: 40px;
+        @include breackpoint(ms) {
+          text-align: center;
+          width: 170px;
+        }
+        @include breackpoint(md) {
+       
+          text-align: center;
+          width: 131px;
+        }
+        @include breackpoint(sm) {
+        
+          text-align: center;
+          width: 131px;
+        }
+        @include breackpoint(xm) {
+          padding-bottom: 98px
+        }
+
         p {
           padding-bottom: 10px;
+          @include breackpoint(xxl) {
+            padding-bottom: 8px;
+            font-size: 16px;
+            line-height: 14px;
+      
+          }
+          @include breackpoint(ms) {
+            padding-bottom: 8px;
+            font-size: 14px;
+            line-height: 14px;
+      
+          }
+          @include breackpoint(md) {
+            padding-bottom: 8px;
+            font-size: 12px;
+            line-height: 14px;
+      
+          }
+          @include breackpoint(sm) {
+         
+            padding-bottom: 5px;
+            font-size: 12px;
+            line-height: 14px;
+          }
+          @include breackpoint(xm) {
+            padding-bottom: 2px;
+            font-size: 12px;
+            line-height: 14px;
+          }
+          @include breackpoint(xs) {
+            padding-bottom: 2px;
+            font-size: 12px;
+            line-height: 14px;
+          }
         }
         a {
           padding-bottom: 10px;
+          @include breackpoint(xxl) {
+            padding-bottom: 8px;
+            font-size: 16px;
+          }
+          @include breackpoint(ms) {
+            padding-bottom: 8px;
+            font-size: 14px;
+          }
+          @include breackpoint(md) {
+            padding-bottom: 8px;
+            font-size: 12px;
+          }
+          @include breackpoint(sm) {
+            padding-bottom: 5px;
+            font-size: 12px;
+          }
+          @include breackpoint(xm) {
+            padding-bottom: 2px;
+            font-size: 12px;
+          }
+          @include breackpoint(xs) {
+            padding-bottom: 2px;
+            font-size: 12px;
+          }
         }
       }
     }
     .maps_navigation {
       padding-top: 31px;
-      padding-left: 50px;
+      padding-left: 80px;
+      @include breackpoint(xxl) {
+        padding-top: 25px;
+        padding-left: 90px;
+      }
+      @include breackpoint(ms) {
+        max-width: 588px;
+        padding-top: 15px;
+        padding-left: 41px;
+      }
+      @include breackpoint(md) {
+        max-width: 501px;
+        padding-top: 28px;
+        padding-left: 41px;
+      }
+      @include breackpoint(sm) {
+        max-width: 323px;
+        padding-top: 46px;
+        padding-left: 10px;
+      }
+      @include breackpoint(xm) {
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      @include breackpoint(xs) {
+        padding-top: 10px;
+        padding-left: 10px;
+      }
+      .map1 {
+        @include breackpoint(sm) {
+         
+          display: block ;
+        }
+        @include breackpoint(xm) {
+          display: none ;
+        }
+        @include breackpoint(xs) {
+          display: none ;
+        }
+      }
+      .map2 {
+        display: none;
+        @include breackpoint(sm) {
+          display: none;
+        }
+        @include breackpoint(xm) {
+          display: block;
+        }
+        @include breackpoint(xs) {
+          display: block;
+        }
+      }
     }
   }
   .footerStripe {
@@ -96,12 +484,37 @@
     text-align: left;
     z-index: -1;
     border-radius: 20px;
+    @include breackpoint(sm) {
+      border-radius: 5px;
+    }
+    @include breackpoint(xm) {
+      border-radius: 5px;
+    }
+    @include breackpoint(xs) {
+      border-radius: 5px;
+    }
     p {
       font-weight: 300;
       font-size: 16px;
       color: rgba(241, 246, 255, 1);
       padding-top: 85px;
       padding-left: 39px;
+      @include breackpoint(md) {
+        font-size: 14px;
+        line-height: 15px;
+      }
+      @include breackpoint(sm) {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      @include breackpoint(xm) {
+        font-size: 10px;
+        line-height: 15px;
+      }
+      @include breackpoint(xs) {
+        font-size: 10px;
+        line-height: 15px;
+      }
     }
   }
 }

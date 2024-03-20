@@ -1,18 +1,104 @@
 @import "../../app/globalVariables.scss";
+
 .form {
   padding: 10px 75px 0px 75px;
+  @include breackpoint(xm) {
+    padding: 0px 10px 0px 10px;
+    justify-content: center;
+
+  }
+  @include breackpoint(xs) {
+  
+    width: 326px;
+    
+  }
+
   .form__wrapper {
     margin-top: 20px;
+    @include breackpoint(xm) {
+
+    }
+    @include breackpoint(xs) {
+      width: 326px;
+    }
+
     .form__top {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include breackpoint(ms) {
+        flex-direction: column;
+        gap: 15px;
+      }
+      @include breackpoint(md) {
+        flex-direction: column;
+        gap: 15px;
+      }
+      @include breackpoint(sm) {
+        flex-direction: column;
+        gap: 15px;
+      }
+      @include breackpoint(xm) {
+        flex-direction: column;
+        gap: 15px;
+      }
+      @include breackpoint(xs) {
+        flex-direction: column;
+        gap: 15px;
+      }
+
       button {
         padding: 13px 80px 13px 80px !important;
+        @include breackpoint(ms) {
+          font-size: 23px;
+          width: 350px;
+          padding: 20px 80px 20px 80px !important;
+        }
+        @include breackpoint(md) {
+          font-size: 20px;
+          width: 324px;
+          padding: 20px 80px 20px 80px !important;
+        }
+        @include breackpoint(sm) {
+          font-size: 20px;
+          width: 324px;
+          padding: 20px 80px 20px 80px !important;
+        }
+        @include breackpoint(xm) {
+          font-size: 17px;
+          padding: 20px 80px 20px 80px !important;
+          width: 300px;
+          
+        }
+        @include breackpoint(xs) {
+          font-size: 14px;
+          padding: 20px 80px 20px 80px !important;
+          width: 280px;
+          border-radius: 20px;
+          order: 1;
+        }
       }
+
       .input {
-        width: 320px !important;
+        width: 320px;
+        @include breackpoint(ms) {
+          width: 500px;
+        }
+        @include breackpoint(md) {
+          width: 470px;
+        }
+        @include breackpoint(sm) {
+          width: 380px;
+        }
+        @include breackpoint(xm) {
+          width: 350px;
+        }
+        @include breackpoint(xs) {
+          width: 329px;
+          
+        }
       }
+
       input {
         width: 434px;
         border-radius: 20px;
@@ -22,11 +108,28 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 24px;
+        @include breackpoint(ms) {
+          width: 500px;
+        }
+        @include breackpoint(md) {
+          width: 470px;
+        }
+        @include breackpoint(sm) {
+          width: 380px;
+        }
+        @include breackpoint(xm) {
+          width: 350px;
+        }
+        @include breackpoint(xs) {
+          width: 329px;
+        }
+
         &::-webkit-input-placeholder {
           color: $black;
         }
       }
     }
+
     textarea {
       margin-top: 30px;
       width: 100%;
@@ -38,8 +141,18 @@
       font-size: 20px;
       font-weight: 500;
       line-height: 24px;
+      @include breackpoint(xm) {
+        // min-width: 350px;
+      }
+      @include breackpoint(xs) {
+        height: 154px;
+        width: 329px;
+      }
+
       &::placeholder {
         color: $black;
+        line-height: 24px;
+        
       }
     }
   }

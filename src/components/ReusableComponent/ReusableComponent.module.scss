@@ -11,5 +11,21 @@
         line-height: 60px;
         color: $black;
         text-align: center;
+        @include breackpoint(md) {
+            font-size: 40px;
+            line-height: 24px;
+          }
+        @include breackpoint(sm) {
+            font-size: 30px;
+            line-height: 24px;
+          }
+        @include breackpoint(xm) {
+            font-size: 24px;
+            line-height: 24px;
+          }
+        @include breackpoint(xs) {
+            font-size: 16px;
+            line-height: 24px;
+          }
     }
 }

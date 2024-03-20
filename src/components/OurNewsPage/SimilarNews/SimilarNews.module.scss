@@ -4,11 +4,32 @@
   margin-bottom: 100px;
   justify-content: flex-start;
   flex-direction: column;
+  @include breackpoint(xs) {
+    padding-left: 5px;
+    justify-content: center;
+    align-items: center;
+  }
 
   h3 {
     padding-left: 7%;
     font-size: 40px;
     font-weight: bold;
+    @include breackpoint(sm) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 24px;
+    }
+    @include breackpoint(xm) {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 24px;
+    }
+    @include breackpoint(xs) {
+      text-align: justify;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 24px;
+    }
   }
 
   .lastNews__container {
@@ -17,12 +38,37 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    @include breackpoint(xs) {
+    }
 
     .lastNews__bloc {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 85vw;
+      @include breackpoint(md) {
+        display: flex;
+
+        width: 793px;
+        justify-content: space-evenly;
+      }
+      @include breackpoint(sm) {
+        display: flex;
+        overflow-x: scroll;
+        width: 970px;
+      }
+
+      @include breackpoint(xm) {
+        display: flex;
+        overflow-x: scroll;
+        width: 970px;
+      }
+      @include breackpoint(xs) {
+        display: flex;
+        overflow-x: scroll;
+        width: 970px;
+      }
+
       .lastNews__images {
         width: 30%;
         cursor: pointer;
@@ -32,14 +78,56 @@
         position: relative;
         height: 300px;
         border-radius: 20px;
+        @include breackpoint(md) {
+         
+          object-fit: cover;
+        }
+        @include breackpoint(sm) {
+          left: 20%;
+          object-fit: cover;
+        }
+        @include breackpoint(xm) {
+          left: 32%;
+          object-fit: cover;
+        }
+        @include breackpoint(xs) {
+          left: 32%;
+          object-fit: cover;
+        }
+
         .lastNews__image {
           position: absolute;
+          @include breackpoint(md) {
+            height: 170px;
+          }
+          @include breackpoint(xs) {
+            height: 200px;
+          }
+          @include breackpoint(xm) {
+            height: 200px;
+          }
         }
         p {
           position: absolute;
           color: $white;
           font-weight: bold;
           padding: 0 20px;
+          @include breackpoint(md) {
+            font-size: 14px;
+            line-height: 22px;
+          }
+          @include breackpoint(sm) {
+            font-size: 17px;
+            line-height: 22px;
+          }
+          @include breackpoint(xm) {
+            font-size: 17px;
+            line-height: 22px;
+          }
+          @include breackpoint(xs) {
+            font-size: 15px;
+            line-height: 22px;
+          }
         }
       }
     }
