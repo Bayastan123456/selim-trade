@@ -4,11 +4,10 @@
   margin-bottom: 100px;
   justify-content: flex-start;
   flex-direction: column;
-  @include breackpoint(xs) {
-    padding-left: 5px;
-    justify-content: center;
-    align-items: center;
-  }
+  // @include breackpoint(xm) {
+  //   padding-left: 15px;
+  //   padding-left: 15px;
+  // }
 
   h3 {
     padding-left: 7%;
@@ -39,6 +38,8 @@
     flex-direction: column;
     text-align: center;
     @include breackpoint(xs) {
+      // width: 1400px;
+      // max-width: 380px;
     }
 
     .lastNews__bloc {
@@ -48,25 +49,32 @@
       width: 85vw;
       @include breackpoint(md) {
         display: flex;
-
         width: 793px;
         justify-content: space-evenly;
       }
       @include breackpoint(sm) {
         display: flex;
-        overflow-x: scroll;
-        width: 970px;
+        overflow-x: auto;
+        min-width: 460px;
+        max-width: 607px;
+        column-gap: 15px;
       }
 
       @include breackpoint(xm) {
         display: flex;
-        overflow-x: scroll;
-        width: 970px;
+        // overflow-x: auto;
+        min-width: 300px;
+        max-width: 380px;
+        column-gap: 15px;
+        // max-width: 600px;
       }
       @include breackpoint(xs) {
+        column-gap: 15px;
+        // width: 1400px;
+        max-width: 360px;
         display: flex;
-        overflow-x: scroll;
-        width: 970px;
+        overflow-x: auto;
+        // position: relative;
       }
 
       .lastNews__images {
@@ -83,16 +91,22 @@
           object-fit: cover;
         }
         @include breackpoint(sm) {
-          left: 20%;
-          object-fit: cover;
+          left: 100px;
+          column-gap: 10px;
+          width: 300px;
+          flex-shrink: 0;
         }
         @include breackpoint(xm) {
-          left: 32%;
-          object-fit: cover;
+          left: 20px;
+          column-gap: 10px;
+          width: 300px;
+          flex-shrink: 0;
         }
         @include breackpoint(xs) {
-          left: 32%;
-          object-fit: cover;
+          left: 10px;
+          column-gap: 10px;
+          width: 300px;
+          flex-shrink: 0;
         }
 
         .lastNews__image {
@@ -106,12 +120,20 @@
           @include breackpoint(xm) {
             height: 200px;
           }
+          @include breackpoint(sm) {
+            min-width: 100%;
+          }
+          @include breackpoint(xs) {
+            // width: 360px;
+            // height: 160px;
+          }
         }
         p {
           position: absolute;
           color: $white;
           font-weight: bold;
           padding: 0 20px;
+          text-align: left;
           @include breackpoint(md) {
             font-size: 14px;
             line-height: 22px;

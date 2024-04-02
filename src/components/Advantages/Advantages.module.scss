@@ -1,117 +1,5 @@
-// @import "../../app/globalVariables.scss";
-
-// .advantages {
-//   background: url("../../assets/Advantages/image\ 17.png");
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   margin-top: 200px;
-//   height: 400px;
-
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   @include breackpoint(xs) {
-//     background:none;
-//   }
-
-//   .advantages__text {
-//     padding-top: 100px;
-//     padding-bottom: 123px;
-//     @include breackpoint(xs) {
-
-//     }
-//   }
-
-//   .cards {
-//     width: 244px;
-//     height: 189px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     border-radius: 10px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
-//     margin-bottom: 20px;
-//     background-color: white;
-//     // @include breackpoint(xs) {
-//     //   width: 225px;
-//     //   height: 123px;
-//     //   display: flex;
-//     //   flex-direction: column;
-//     //   align-items: center;
-//     //   justify-content: center;
-//     //   border-radius: 10px;
-//     //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.13);
-//     //   margin-bottom: 20px;
-//     //   background-color: white;
-//     // }
-
-//     img {
-//       margin-bottom: 15px;
-//       margin-top: 10px;
-//       // @include breackpoint(xs) {
-//       //   margin-bottom: 9px;
-//       //   margin-top: 10px;
-//       // }
-//     }
-
-//     &:nth-child(1) img {
-//       width: 70px;
-//       height: 70px;
-//       // @include breackpoint(xs) {
-//       //   width: 50px;
-//       //   height: 50px;
-//       // }
-//     }
-
-//     &:nth-child(2) img {
-//       width: 80px;
-//       height: 80px;
-//       // @include breackpoint(xs) {
-//       //   width: 50px;
-//       //   height: 50px;
-//       // }
-//     }
-
-//     &:nth-child(3) img,
-//     &:nth-child(4) img,
-//     &:nth-child(5) img {
-//       width: 70px;
-//       height: 70px;
-//       // @include breackpoint(xs) {
-//       //   width: 50px;
-//       //   height: 50px;
-//       // }
-//     }
-//   }
-
-//   .advantages__text_desc {
-//     ul {
-//       display: flex;
-//       column-gap: 15px;
-//     }
-
-//     p {
-//       font-size: 20px;
-//       font-weight: 600;
-//       line-height: 28px;
-//       color: $black;
-//       text-align: center;
-//       // @include breackpoint(xs) {
-//       //   font-size: 14px;
-//       //   font-weight: 600;
-//       //   line-height: 19px;
-//       //   color: $black;
-//       //   text-align: center;
-//       // }
-//     }
-//   }
-// }
-
 @import "../../app/globalVariables.scss";
-
-.service__container {
+.advantages__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,14 +8,42 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom 20% right 50%;
-
-  .service__blok {
-    margin-top: 30px;
-    width: 85vw;
+  justify-content: center;
+  @include breackpoint(sm) {
+    column-gap: 10px;
+    max-width: 770px;
     display: flex;
-    justify-content: space-between;
+    align-items: start;
+    overflow-x: auto;
+    margin-bottom: 50px;
+  }
+  @include breackpoint(xm) {
+    column-gap: 10px;
+    max-width: 590px;
+    display: flex;
+    align-items: start;
+    overflow-x: auto;
+    margin-bottom: 50px;
+  }
+  @include breackpoint(xs) {
+    column-gap: 10px;
+    max-width: 360px;
+    display: flex;
+    align-items: start;
+    overflow-x: auto;
+    margin-bottom: 50px;
+  }
 
-    .service__card {
+  .advantages__blok {
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+    margin-bottom: 50px;
+    @include breackpoint(xs) {
+    
+    }
+
+    .advantages__card {
       text-align: center;
       width: 20%;
       height: 150px;
@@ -139,9 +55,30 @@
       border-radius: 20px;
       cursor: pointer;
       background-color: $white;
+      @include breackpoint(sm) {
+        width: 225px;
+        height: 125px;
+      }
+      @include breackpoint(xs) {
+        width: 225px;
+        height: 125px;
+      }
 
       p {
-        font-weight: 500;
+        font-size: 20px;
+        @include breackpoint(ms) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        @include breackpoint(md) {
+          font-size: 16px;
+        }
+        @include breackpoint(sm) {
+          font-size: 14px;
+        }
+        @include breackpoint(xs) {
+          font-size: 14px;
+        }
       }
     }
   }

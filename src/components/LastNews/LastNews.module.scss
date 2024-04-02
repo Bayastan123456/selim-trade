@@ -9,21 +9,67 @@
   background-repeat: no-repeat;
   background-position: bottom -80px right;
   text-align: center;
+  @include breackpoint(md) {
+    margin-bottom: 50px;
+  }
+  @include breackpoint(sm) {
+    max-width: 776px;
+    overflow-x: auto;
+    align-items: start; 
+  }
+  @include breackpoint(xm) {
+    max-width: 600px;
+    overflow-x: auto;
+    align-items: start; 
+  }
+  @include breackpoint(xs) {
+    max-width: 360px;
+    overflow-x: auto;
+    align-items: start; 
+  }
 
   .lastNews__bloc {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 85vw;
+    @include breackpoint(xxl) {
+      column-gap: 10px;
+     }
+    @include breackpoint(ms) {
+      column-gap: 10px;
+     }
+    @include breackpoint(md) {
+      column-gap: 10px;
+     }
+    @include breackpoint(sm) {
+      column-gap: 10px;
+       width: 776px;
+       align-items: start;
+       overflow-x: auto;
+     }
+    @include breackpoint(xm) {
+      column-gap: 10px;
+       width: 600px;
+       align-items: start;
+       overflow-x: auto;
+     }
+    @include breackpoint(xs) {
+     column-gap: 10px;
+      width: 600px;
+      align-items: start;
+      overflow-x: auto;
+    }
     .lastNews__images {
       width: 30%;
       cursor: pointer;
       display: flex;
-      justify-content: space-between;
       align-items: center;
       position: relative;
       height: 300px;
       border-radius: 20px;
+      @include breackpoint(xs) {
+        width: 300px;
+      }
       .lastNews__image {
         position: absolute;
       }
@@ -32,6 +78,18 @@
         color: $white;
         font-weight: bold;
         padding: 0 20px;
+        @include breackpoint(md) {
+          font-size: 13px;
+        }
+        @include breackpoint(sm) {
+          font-size: 13px;
+        }
+        @include breackpoint(xm) {
+          font-size: 12px;
+        }
+        @include breackpoint(xs) {
+          font-size: 11px;
+        }
       }
     }
   }
