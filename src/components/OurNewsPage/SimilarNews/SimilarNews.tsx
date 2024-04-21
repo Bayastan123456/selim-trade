@@ -28,6 +28,7 @@ const SimilarNews = () => {
             src={item.image}
             alt="error"
             className={scss.lastNews__image}
+            layout="responsive"
             width={400}
             height={400}
           />

@@ -3,6 +3,11 @@
 .carouselInner {
   display: flex;
   justify-content: center;
+  @include breackpoint(xs) {
+    // width: 360px;
+    max-width: 380px;
+    // overflow-x: auto;
+  }
 }
 
 .mainPicture {
@@ -10,6 +15,22 @@
   align-items: center;
   position: relative;
   padding-top: 50px;
+  column-gap: 40px;
+  @include breackpoint(ms) {
+    column-gap: 2px;
+  }
+  @include breackpoint(md) {
+    column-gap: 2px;
+  }
+  @include breackpoint(sm) {
+    column-gap: 2px;
+  }
+  @include breackpoint(xm) {
+    column-gap: 2px;
+  }
+  @include breackpoint(xs) {
+    column-gap: 2px;
+  }
 }
 
 .imageButton {
@@ -21,15 +42,45 @@
   transform: scale(1.1);
 }
 .imageButton.left {
-  left: 413px;
+  left: 362px;
+  @include breackpoint(ms) {
+    display: none;
+  }
+  @include breackpoint(md) {
+    display: none;
+  }
+  @include breackpoint(sm) {
+    display: none;
+  }
+  @include breackpoint(xm) {
+    display: none;
+  }
+  @include breackpoint(xs) {
+    display: none;
+  }
 }
 
 .imageButton.right {
-  right: 413px;
+  right: 362px;
+  @include breackpoint(ms) {
+    display: none;
+  }
+  @include breackpoint(md) {
+    display: none;
+  }
+  @include breackpoint(sm) {
+    display: none;
+  }
+  @include breackpoint(xm) {
+    display: none;
+  }
+  @include breackpoint(xs) {
+    display: none;
+  }
 }
 
 .imageWrapper {
-  margin: 0 58px;
+  // margin: 0 58px;
 
   img {
     border-radius: 20px;

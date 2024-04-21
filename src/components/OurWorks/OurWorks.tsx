@@ -47,6 +47,13 @@ const OurWorks = () => {
                   alt={`ourworks${index + 1}`}
                   width={index === 1 ? 431 : 361}
                   height={index === 1 ? 439 : 432}
+                  onClick={() => {
+                    if (index === 0) {
+                      prevImage();
+                    } else if (index === totalImages - 1) {
+                      nextImage();
+                    }
+                  }}
                 />
               </div>
             ))}
