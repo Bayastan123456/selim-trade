@@ -6,6 +6,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include breackpoint(ms) {
+    max-width: 1150px;
+  }
+  @include breackpoint(md) {
+    max-width: 950px;
+  }
+  @include breackpoint(sm) {
+    max-width: 750px;
+  }
+  @include breackpoint(xm) {
+    max-width: 580px;
+  }
+  @include breackpoint(xs) {
+    max-width: 380px;
+    
+  }
 
   .reviews__blok {
     margin-top: 50px;
@@ -13,6 +29,37 @@
     justify-content: space-evenly;
     align-items: center;
     width: 85vw;
+    
+    @include breackpoint(ms) {
+      max-width: 1100px;
+      height:400px ;
+      overflow-x: auto;
+      column-gap: 20px;
+    }
+    @include breackpoint(md) {
+      max-width: 950px;
+      height:400px ;
+      overflow-x: auto;
+      column-gap: 20px;
+    }
+    @include breackpoint(sm) {
+      max-width: 750px;
+      height:400px ;
+      overflow-x: auto;
+      column-gap: 20px;
+    }
+    @include breackpoint(xm) {
+      max-width: 550px;
+      height:400px ;
+      overflow-x: auto;
+      column-gap: 20px;
+    }
+    @include breackpoint(xs) {
+      max-width: 370px;
+      height:400px ;
+      overflow-x: auto;
+      column-gap: 20px;
+    }
 
     .reviews__card {
       display: flex;
@@ -24,10 +71,59 @@
       height: 180px;
       padding: 0 10px;
       padding-bottom: 20px;
+      @include breackpoint(xxl) {
+        height: 200px;
+      }
+      @include breackpoint(ms) {
+        justify-content: center;
+        box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+        width: 85%;
+        height: 250px;
+      }
+      @include breackpoint(md) {
+        justify-content: center;
+        box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+        width: 80%;
+        height: 250px;
+      }
+      @include breackpoint(sm) {
+        justify-content: center;
+        box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+        width: 80%;
+        height: 250px;
+      }
+      @include breackpoint(xm) {
+        box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+        width: 80%;
+        height: 250px;
+      }
+      @include breackpoint(xs) {
+        box-shadow: 0px 5px 10px rgba(152, 135, 135, 0.5);
+        width: 80%;
+        height: 250px;
+      }
 
       .reviews__icon {
         display: flex;
         align-items: center;
+        @include breackpoint(ms) {
+          width: 250px;
+          padding-bottom: 20px;
+        }
+        @include breackpoint(md) {
+          width: 250px;
+          padding-bottom: 20px;
+        }
+        @include breackpoint(sm) {
+          width: 250px;
+          padding-bottom: 20px;
+        }
+        @include breackpoint(xm) {
+          width: 250px;
+        }
+        @include breackpoint(xs) {
+          width: 250px;
+        }
 
         .reviews__image {
           border-radius: 50%;
@@ -36,6 +132,12 @@
         }
         .reviews__title {
           font-size: 14px;
+          @include breackpoint(xm) {
+            padding: 10px;
+          }
+          @include breackpoint(xs) {
+            padding: 10px;
+          }
         }
         .reviews__title > p:nth-child(1) {
           font-weight: bold;
