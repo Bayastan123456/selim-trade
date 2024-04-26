@@ -44,7 +44,7 @@ const Footer: FC = () => {
                 <Image src={insta} alt="instagram" width={36} />
               </Link>
               <Link
-                href="https://www.instagram.com/selimtrade/"
+                href="https://api.whatsapp.com/send/?phone=996552570755&text&type=phone_number&app_absent=0"
                 target="__blank"
               >
                 <Image src={whatsapp} alt="whatsapp" width={36} />

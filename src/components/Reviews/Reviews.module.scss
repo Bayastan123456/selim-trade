@@ -1,7 +1,7 @@
 @import "../../app/globalVariables.scss";
 
 .reviews__container {
-  margin-top: 40px;
+  margin-top: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,20 +43,23 @@
       column-gap: 20px;
     }
     @include breackpoint(sm) {
+      margin-top: 5px;
       max-width: 750px;
-      height:400px ;
+      height:350px ;
       overflow-x: auto;
       column-gap: 20px;
     }
     @include breackpoint(xm) {
+      margin-top: 5px;
       max-width: 550px;
-      height:400px ;
+      height:350px ;
       overflow-x: auto;
       column-gap: 20px;
     }
     @include breackpoint(xs) {
+      margin-top: 5px;
       max-width: 370px;
-      height:400px ;
+      height:350px ;
       overflow-x: auto;
       column-gap: 20px;
     }

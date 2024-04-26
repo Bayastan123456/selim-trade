@@ -1,106 +1,109 @@
 @import "../../app/globalVariables.scss";
-
-.lastNews__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.lastNews{
   background-image: url("../../assets/lastNews/image 17.png");
-  background-repeat: no-repeat;
-  background-position: bottom -80px right;
-  text-align: center;
-  @include breackpoint(md) {
-    margin-bottom: 50px;
-  }
-  @include breackpoint(sm) {
-    max-width: 776px;
-    overflow-x: auto;
-    align-items: start; 
-  }
-  @include breackpoint(xm) {
-    max-width: 600px;
-    overflow-x: auto;
-    align-items: start; 
-  }
-  @include breackpoint(xs) {
-    max-width: 360px;
-    overflow-x: auto;
-    align-items: start; 
-  }
-
-  .lastNews__bloc {
+    background-repeat: no-repeat;
+    background-position: bottom -80px right;
+    text-align: center;
+    margin-bottom: 127px;
+  .lastNews__container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 85vw;
-    @include breackpoint(xxl) {
-      column-gap: 10px;
-     }
-    @include breackpoint(ms) {
-      column-gap: 10px;
-     }
+    flex-direction: column;
+    padding-top: 30px;
     @include breackpoint(md) {
-      column-gap: 10px;
-     }
-    @include breackpoint(sm) {
-      column-gap: 10px;
-       width: 776px;
-       align-items: start;
-       overflow-x: auto;
-     }
-    @include breackpoint(xm) {
-      column-gap: 10px;
-       width: 600px;
-       align-items: start;
-       overflow-x: auto;
-     }
-    @include breackpoint(xs) {
-     column-gap: 10px;
-      width: 600px;
-      align-items: start;
-      overflow-x: auto;
+      margin-bottom: 50px;
     }
-    .lastNews__images {
-      width: 30%;
-      cursor: pointer;
+    @include breackpoint(sm) {
+      max-width: 776px;
+      overflow-x: auto;
+      align-items: start; 
+    }
+    @include breackpoint(xm) {
+      max-width: 600px;
+      overflow-x: auto;
+      align-items: start; 
+    }
+    @include breackpoint(xs) {
+      max-width: 360px;
+      overflow-x: auto;
+      align-items: start; 
+    }
+
+    .lastNews__bloc {
       display: flex;
       align-items: center;
-      position: relative;
-      height: 300px;
-      border-radius: 20px;
+      width: 85vw;
+      @include breackpoint(xxl) {
+        column-gap: 10px;
+      }
+      @include breackpoint(ms) {
+        column-gap: 10px;
+      }
+      @include breackpoint(md) {
+        column-gap: 10px;
+      }
+      @include breackpoint(sm) {
+        column-gap: 10px;
+        width: 776px;
+        align-items: start;
+        overflow-x: auto;
+      }
+      @include breackpoint(xm) {
+        column-gap: 10px;
+        width: 600px;
+        align-items: start;
+        overflow-x: auto;
+      }
       @include breackpoint(xs) {
-        width: 300px;
+      column-gap: 10px;
+        width: 600px;
+        align-items: start;
+        overflow-x: auto;
       }
-      .lastNews__image {
-        position: absolute;
-      }
-      p {
-        position: absolute;
-        color: $white;
-        font-weight: bold;
-        padding: 0 20px;
-        @include breackpoint(md) {
-          font-size: 13px;
-        }
-        @include breackpoint(sm) {
-          font-size: 13px;
-        }
-        @include breackpoint(xm) {
-          font-size: 12px;
-        }
+      .lastNews__images {
+        width: 30%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 300px;
+        border-radius: 20px;
         @include breackpoint(xs) {
-          font-size: 11px;
+          width: 300px;
+        }
+        .lastNews__image {
+          position: absolute;
+        }
+        p {
+          position: absolute;
+          color: $white;
+          font-weight: bold;
+          padding: 0 20px;
+          @include breackpoint(md) {
+            font-size: 13px;
+          }
+          @include breackpoint(sm) {
+            font-size: 13px;
+          }
+          @include breackpoint(xm) {
+            font-size: 11px;
+          }
+          @include breackpoint(xs) {
+            font-size: 11px;
+          }
         }
       }
     }
-  }
-  button {
-    border: 1px solid $color1;
-    border-radius: 20px;
-    padding: 5px 20px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: $color1;
-    color: $white;
+    button {
+      border: 1px solid $color1;
+      border-radius: 20px;
+      padding: 5px 20px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: $color1;
+      color: $white;
+    }
   }
 }
