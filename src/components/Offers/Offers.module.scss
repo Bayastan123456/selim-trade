@@ -27,10 +27,10 @@
     color: #222;
     transition: background-color 0.3s ease;
     @include breackpoint(xm) {
-      left: 30%;
+      left: 27%;
     }
     @include breackpoint(xs) {
-      left: 30%;
+      left: 27%;
     }
     &:hover {
       background-color: $color1;

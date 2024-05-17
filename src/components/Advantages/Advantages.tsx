@@ -45,11 +45,16 @@ const Advantages = () => {
   );
 
   return (
-    <div className={scss.advantages__container}>
+    <div className={scss.advantages} >
       <ReusableComponent title="Наши преимущeства">
+    <div className={scss.advantages__container}>
+      
         <div className={scss.advantages__blok}>{iconData}</div>
-      </ReusableComponent>
+      
     </div>
+    </ReusableComponent>
+    </div>
+    
   );
 };
 

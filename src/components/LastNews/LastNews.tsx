@@ -38,11 +38,15 @@ const LastNews = () => {
     []
   );
   return (
-    <div className={scss.lastNews__container}>
+    <div className={scss.lastNews}>
       <ReusableComponent title="Последние новости">
+    <div className={scss.lastNews__container}>
+      
         <div className={scss.lastNews__bloc}>{dataLastNewsMap}</div>
         <button>все новости</button>
-      </ReusableComponent>
+
+    </div>
+    </ReusableComponent>
     </div>
   );
 };

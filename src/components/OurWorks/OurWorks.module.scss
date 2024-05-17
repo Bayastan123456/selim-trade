@@ -3,6 +3,7 @@
 .carouselInner {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
   @include breackpoint(xs) {
     // width: 360px;
     max-width: 380px;
