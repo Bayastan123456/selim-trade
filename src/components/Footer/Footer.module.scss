@@ -419,10 +419,10 @@
     }
     .maps_navigation {
       padding-top: 31px;
-      padding-left: 80px;
+      padding-left: 212px;
       @include breackpoint(xxl) {
         padding-top: 25px;
-        padding-left: 90px;
+        padding-left: 212px;
       }
       @include breackpoint(ms) {
         max-width: 588px;

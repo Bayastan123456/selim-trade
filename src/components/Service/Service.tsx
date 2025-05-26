@@ -39,10 +39,14 @@ const Service = () => {
   );
 
   return (
-    <div className={scss.service__container}>
+    <div className={scss.service}>
       <ReusableComponent title="Сервис">
+    <div className={scss.service__container}>
+      
         <div className={scss.service__blok}>{iconData}</div>
-      </ReusableComponent>
+      
+    </div>
+    </ReusableComponent>
     </div>
   );
 };
